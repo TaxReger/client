@@ -4,14 +4,14 @@ export default function SignInView() {
   return (
     <div>
       <div>
-        <p> Welcome </p>
-        <p>Sign In To View your records</p>
+        <p id = "header"> Welcome </p>
+        <p id="subheading">Login</p>
       </div>
 
-      <form action="" className="signInForm">
-        <input id="emailInput" type="text" />
-
-        <input type="text" />
+      <form action="" className="signInForm" id ="form">
+        <input id="elements" placeholder = "username" type="text" /><br></br>
+        <input id="elements" placeholder="password" type="text" /> <br></br>
+        <button type="button" id="main__btn">Submit</button>
       </form>
     </div>
   );
