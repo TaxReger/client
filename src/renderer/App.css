@@ -28,7 +28,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 100px;
   color: Black;
-  align-items:center;
+  align:center;
   font-weight:400;
   
   
@@ -37,8 +37,8 @@
   margin-left:2.8em;
   font-size: 1.5rem;
   background: #833ab4;
-  background: -webkit-linear-gradient(to right, purple ,purple,purple);
-  background: linear-gradient(to right,purple, purple, purple);
+  /*background: -webkit-linear-gradient(to right, #23E2E5 , #23E2E5, #23E2E5);
+  background: linear-gradient(to right,#23E2E5, #23E2E5, #23E2E5); */
   padding: 5px 60px;
   border: none;
   border-radius: 5px;
@@ -80,3 +80,36 @@
    margin-left:80px;
   
 }
+
+#create{
+  margin-top:1em;
+  margin-left:7em;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+#create:hover{
+  color: black;
+  
+}
+
+
+#forgot {
+  margin-left:5em;
+  font-size: 1rem;
+  background: black;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius:1em;
+  color: #fff;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  outline: none;
+}
+#forgot:hover {
+  border-radius:0.4em;
+  
+  
+}
+
