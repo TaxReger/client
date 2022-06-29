@@ -1,0 +1,87 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+ body {
+    position: relative;
+    height: 100vh;
+    background: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+  }
+  #subheading{
+    position:relative;
+    margin-top: 0;
+    color:purple;
+    margin-left:2.5em;
+    font-size:60px;
+    font-weight:100;
+  }
+  
+  #header{
+    margin-left: 3em;
+    margin-bottom:0.7em;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: Black;
+    align:center;
+    font-weight:400;
+    
+    
+  }
+  #main__btn {
+    margin-left:3.5em;
+    font-size: 1.5rem;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #23E2E5 , #23E2E5, #23E2E5);
+    background: linear-gradient(to right,#23E2E5), #23E2E5), #23E2E5));
+    padding: 5px 60px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease;
+    outline: none;
+  }
+  
+  #main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  
+  #main__btn:hover {
+    border-radius:2em;
+    color: white;
+    background-color: black;
+    
+  }
+  #main__btn:hover:after {
+    width: 100%;
+  }
+  #elements{
+    width:20em;
+    height:2em;
+    font-size:2em;
+    margin-bottom:1em;
+    align:center;
+    
+  }
+  
+  #form{
+     font-size:0.5em;
+     margin-left:80px;
+    
+  }
+  
+  
