@@ -2,6 +2,7 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
+
  body {
   position: relative;
   height: 100vh;
@@ -13,22 +14,28 @@
   align-items: center;
   color: purple;
 }
-#subheading{
-  position:relative;
-  margin-top: 0;
-  color:purple;
-  margin-left:2.5em;
-  font-size:60px;
-  font-weight:100;
+#testing{
+  display:box;
+  justify-content:center;
+  align-items:center;
 }
+
+#subheading{
+  color:purple;
+  font-size:3.75em;
+  font-weight:100;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
 
 #header{
   margin-bottom:0.5em;
-  position:relative;
   font-family: 'Montserrat', sans-serif;
-  font-size: 100px;
+  font-size: 7em;
   color: Black;
-  align:center;
+
   font-weight:400;
   
   
@@ -37,25 +44,18 @@
   margin-left:2.8em;
   font-size: 1.5rem;
   background: #833ab4;
-  /*background: -webkit-linear-gradient(to right, #23E2E5 , #23E2E5, #23E2E5);
-  background: linear-gradient(to right,#23E2E5, #23E2E5, #23E2E5); */
-  padding: 5px 60px;
+  padding: 0.313em 3.75em;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.313em;
   color: #fff;
   margin-top: 0.5rem;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
   outline: none;
+  margin-right:7rem;
 }
 
-#main__btn a {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-decoration: none;
-}
 
 
 
@@ -68,23 +68,30 @@
   width: 100%;
 }
 #elements{
+  margin-right:2em;
   width:20em;
   height:2em;
   font-size:2em;
   margin-bottom:1em;
+  justify-content:center;
+
   
 }
+
 
 #form{
    font-size:0.5em;
-   margin-left:80px;
+   margin-left:8em;
+  align-items:center;
+  text-align:center;
+  
   
 }
 
+
 #create{
-  margin-top:1em;
-  margin-left:7em;
-  font-size: 1em;
+ 
+  font-size: 3em;
   transition: all 0.3s ease;
 }
 #create:hover{
@@ -102,6 +109,8 @@
   border-radius:1em;
   color: #fff;
   margin-top: 0.5rem;
+  text-align:center;
+  margin-right:7rem;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
@@ -112,4 +121,62 @@
   
   
 }
+#container{
+  background-color: purple;
+  color: white;
+  overflow:hidden;
+  position:absolute;
+  align-content:center;
+  top: 0.25em;
+  left: -1em;
+  padding: 2em 1em 2em 103.3em;
+  top:-1em;
+}
+#forget_text{
+  font-size:2em;
+  margin-right:2em;
+  transition: alll 1s ease;
+  cursor:pointer;
+}
+ 
+#contents p{
+  position:absolute;
+  top: 0.25em;
+  left: 2em;
+  top: 0.8em;
+  color:white;
+  font-weight:light;
+  transition: all 0.5s ease-in-out;
+  cursor:pointer;
+  
+}
+
+#contents p:hover{
+  top: 0.5em;
+  color:yellow;
+  cursor:pointer;
+  
+}
+#Image{
+  position:absolute;
+  width:30px;
+  right: 4em;
+  top: 1.2em;
+  transition: all 1s ease-in-out;
+  
+}
+#Image:hover{
+  top:0.02em
+}
+#icon{
+  position:box;
+  width:6em;
+  margin-left: 13em;
+  margin-bottom:-3em;
+  margin-top:1em;
+}
+
+
+
+
 
