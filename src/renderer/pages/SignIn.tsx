@@ -1,11 +1,13 @@
 import '../App.css';
+import church from 'assets/icons/church.png';
+
 
 export default function SignInView() {
   return (
     <div>
     <div id="container">
       <div id = "contents">
-         <img src="C:\Users\nmarc\Desktop\TaxProgram_Backend\client\assets\icons\church.png" alt="Photo of the Remarkables mountain range in Queenstown, New Zealand." id="Image"></img>
+         <img src={church} alt="church" id="Image"></img>
         <p> Tax Registration Program</p>
       
       </div>
@@ -13,7 +15,7 @@ export default function SignInView() {
     <div id="testing">
     
       <div id="titles">
-        <img src="C:\Users\nmarc\Desktop\TaxProgram_Backend\client\assets\icons\form.png" id="icon"></img>
+        <img src="assets\icons\form.png" id="icon"></img>
      
         <p id="subheading">Login</p>
       </div>
