@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import SignInView from './Pages/SignIn';
-import TableView from './Pages/TableView';
+import SignInView from './pages/SignIn';
+import TableView from './pages/TableView';
 
 const Gateway = () => {
   const [isSignedIn, setisSignedIn] = useState(false);
