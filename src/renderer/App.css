@@ -104,6 +104,7 @@
 
 
 #forgot {
+  text-align:center;
   margin-left:5em;
   font-size: 1rem;
   background: black;
@@ -112,9 +113,9 @@
   border: none;
   border-radius:1em;
   color: #fff;
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
   text-align:center;
-  margin-right:7rem;
+  margin-right:4rem;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
@@ -137,8 +138,10 @@
   top:-1em;
 }
 #forget_text{
-  font-size:2em;
-  margin-right:2em;
+  margin-top: -0.6rem;
+  margin-left: 0.5rem;
+  font-size:1em;
+  text-align:center;
   transition: alll 1s ease;
   cursor:pointer;
 }
@@ -178,6 +181,13 @@
   color:black;
   font-size:4em;
   
+}
+
+#lower_form{
+  margin-top: -1em;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
 }
 
 
