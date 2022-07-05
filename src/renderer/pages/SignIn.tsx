@@ -21,6 +21,16 @@ export default function SignInView() {
   };
   return (
     <div>
+    <nav className="navbar navbar-light bg-dark">
+  <div className="container-fluid">
+    <a className="navbar-brand text-light" href="#">Tax Registration Program </a>
+    
+    
+    
+  </div>
+</nav>
+    
+    <div>
       <div id="main_body">
         <div id="body_stuff">
           <div id="testing">
@@ -71,6 +81,7 @@ export default function SignInView() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

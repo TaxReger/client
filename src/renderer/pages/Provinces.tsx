@@ -1,6 +1,6 @@
 import './Provinces.css';
 
-export default function SignInView() {
+export default function ProvinceView() {
   return (
     <div>
       <div id="body_stuff">

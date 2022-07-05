@@ -1,7 +1,7 @@
 import './PasswordReset.css';
 import icon from '../../../assets/icons/download.png';
 
-export default function SignUpView() {
+export default function PasswordResetView() {
   return (
     <div>
       <div id="container">
