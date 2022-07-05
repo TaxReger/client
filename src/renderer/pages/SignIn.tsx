@@ -4,6 +4,7 @@ import '../App.css';
 import logo from './church_logo.png';
 import icon from '../../../assets/icon.svg';
 
+
 export default function SignInView() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
@@ -23,18 +24,23 @@ export default function SignInView() {
   };
   return (
     <div>
-      <div id="container">
-        <div id="contents">
-          <img src={logo} alt="church" id="Image" />
-          <img width="200px" alt="icon" src={icon} />
+    <div id = "main_body">
 
-          <p> Tax Registration Program</p>
-        </div>
-      </div>
+    <nav className="navbar navbar-light bg-dark" >
+      <div className="container-fluid">
+        <a className="navbar-brand text-light" href="#">Tax Registration Program</a>
+    </div>
+    </nav>
+    <div id="body_stuff">
+  
       <div id="testing">
+      
         <div id="titles">
           <img src="assets/icons/form.png" id="icon" alt="image_alternative" />
+          
+          <h1 id = "icon"><i className="bi bi-journal-plus"></i></h1>
           <p id="subheading">Login</p>
+          
         </div>
         <div id="form_contents">
           <form onSubmit={handleSubmit} className="signInForm" id="form">
@@ -73,6 +79,9 @@ export default function SignInView() {
           <div id="forget_text">Not Registered? Create an Account</div>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
+      </div>
+
   );
 }

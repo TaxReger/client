@@ -3,38 +3,43 @@ import '../Signup.css';
 export default function SignUpView() {
   return (
     <div>
-      <div id="container">
-        <div id="contents">
-          <img
-            src="assets\icons\church.png"
-            alt="Photo of the Remarkables mountain range in Queenstown, New Zealand."
-            id="Image"
-          ></img>
-          <p> Tax Registration Program</p>
-        </div>
+<nav className="navbar navbar-light bg-dark">
+  <div className="container-fluid">
+    <a className="navbar-brand text-light" href="#">Tax Registration Program </a>
+    
+    
+  </div>
+</nav>
+
+  
+
+
+  <div id="body_stuff">
+
+    <div id="testing">
+    
+      <div id="titles">
+        
+        <h1 id = "icon"><i className="bi bi-person-plus"></i></h1>
+       
+     
+        <p id="subheading">Sign Up</p>
+        
       </div>
+    <div id="form_contents">
 
-      <div id="testing">
-        <div>
-          <div>
-            <img src="assets\icons\signup.png" id="icon"></img>
-            <p id="header"> Sign up </p>
-          </div>
+      <form action="" className="signInForm" id ="form">
+        <input id="elements" placeholder = "username" type="text" /><br></br>
+        
 
-          <form action="" className="signInForm" id="form">
-            <input id="elements" placeholder="username" type="text" />
-            <br></br>
-
-            <input id="elements" placeholder="password" type="text" />
-            <br></br>
-            <button type="button" id="main__btn">
-              Next
-            </button>
-            <br></br>
-            <br></br>
-          </form>
-        </div>
-      </div>
+        <input id="elements" placeholder="password" type="text" /><br></br>
+         <button type="button" id="main__btn">Save</button><br></br>
+      
+      </form>
+      
     </div>
+    </div>
+  </div>
+  </div>
   );
 }
