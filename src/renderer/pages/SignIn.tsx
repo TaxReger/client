@@ -5,13 +5,13 @@ export default function SignInView() {
     <div>
       <div id="container">
         <div id="contents">
-          <img src="" alt="church" id="Image"></img>
+          <img src=""alt="church" id="Image"></img>
           <p> Tax Registration Program</p>
         </div>
       </div>
       <div id="testing">
         <div id="titles">
-          <img src="assets/icons/form.png" id="icon"></img>
+          <img src="assets/icons/form.png" id="icon" alt=" form image"></img>
 
           <p id="subheading">Login</p>
         </div>

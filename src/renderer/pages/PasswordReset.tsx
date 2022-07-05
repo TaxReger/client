@@ -5,7 +5,7 @@ export default function SignUpView() {
     <div>
     <div id="container">
     <div id = "contents">
-       <img src="assets\icons\church.png" alt="Photo of the Remarkables mountain range in Queenstown, New Zealand." id="Image"></img>
+       <img src="assets\icons\church.png" alt="church icon" id="Image"></img>
       <p> Tax Registration Program</p>
       
     </div>

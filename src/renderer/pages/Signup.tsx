@@ -6,7 +6,7 @@ export default function SignUpView() {
 
     <div id="container">
       <div id = "contents">
-         <img src="assets\icons\church.png" alt="Photo of the Remarkables mountain range in Queenstown, New Zealand." id="Image"></img>
+         <img src="assets\icons\church.png" alt="Church Photo" id="Image"></img>
         <p> Tax Registration Program</p>
         
       </div>
@@ -16,7 +16,7 @@ export default function SignUpView() {
 
 <div>
       <div>
-         <img src="assets\icons\signup.png" id="icon"></img>
+         <img src="assets\icons\signup.png" id="icon" alt="Sign Up Image"></img>
         <p id = "header"> Sign up </p>
       </div>
 
