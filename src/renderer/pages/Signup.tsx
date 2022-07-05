@@ -3,34 +3,43 @@ import '../Signup.css';
 export default function SignUpView() {
   return (  
     <div>
+<nav className="navbar navbar-light bg-dark">
+  <div className="container-fluid">
+    <a className="navbar-brand text-light" href="#">Tax Registration Program </a>
+    
+    
+  </div>
+</nav>
 
-    <div id="container">
-      <div id = "contents">
-         <img src="assets\icons\church.png" alt="Church Photo" id="Image"></img>
-        <p> Tax Registration Program</p>
+  
+
+
+  <div id="body_stuff">
+
+    <div id="testing">
+    
+      <div id="titles">
+        
+        <h1 id = "icon"><i className="bi bi-person-plus"></i></h1>
+       
+     
+        <p id="subheading">Sign Up</p>
         
       </div>
-    </div>
-
-<div id="testing">
-
-<div>
-      <div>
-         <img src="assets\icons\signup.png" id="icon" alt="Sign Up Image"></img>
-        <p id = "header"> Sign up </p>
-      </div>
+    <div id="form_contents">
 
       <form action="" className="signInForm" id ="form">
         <input id="elements" placeholder = "username" type="text" /><br></br>
         
 
         <input id="elements" placeholder="password" type="text" /><br></br>
-         <button type="button" id="main__btn">Next</button><br></br><br></br>
-       
+         <button type="button" id="main__btn">Save</button><br></br>
+      
       </form>
-  
+      
     </div>
-</div>
-</div>
+    </div>
+  </div>
+  </div>
   );
 }
