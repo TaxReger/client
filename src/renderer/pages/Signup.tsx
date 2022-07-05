@@ -3,14 +3,6 @@ import './Signup.css';
 export default function SignUpView() {
   return (
     <div>
-      <nav className="navbar navbar-light bg-dark">
-        <div className="container-fluid">
-          <a className="navbar-brand text-light" href="/">
-            Tax Registration Program{' '}
-          </a>
-        </div>
-      </nav>
-
       <div id="body_stuff">
         <div id="testing">
           <div id="titles">

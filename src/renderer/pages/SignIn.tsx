@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { getAccount, signIn, useAuthContext } from '../funcs/auth';
 import '../App.css';
 
-
 export default function SignInView() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
@@ -23,18 +22,9 @@ export default function SignInView() {
   return (
     <div>
       <div id="main_body">
-        <nav className="navbar navbar-light bg-dark">
-          <div className="container-fluid">
-            <a className="navbar-brand text-light" href="/">
-              Tax Registration Program
-            </a>
-          </div>
-        </nav>
         <div id="body_stuff">
           <div id="testing">
             <div id="titles">
-              
-
               <h1 id="icon">
                 <i className="bi bi-journal-plus" />
               </h1>
@@ -66,17 +56,16 @@ export default function SignInView() {
                   value="Submit"
                   disabled={working}
                 />
-
               </form>
               <br />
               <br />
-              <div id = "lower_form">
-              <button type="button" id="forgot">
-                Forgot Password?
-              </button>
-              <br />
-              <br />
-              <div id="forget_text">Not Registered? Create an Account</div>
+              <div id="lower_form">
+                <button type="button" id="forgot">
+                  Forgot Password?
+                </button>
+                <br />
+                <br />
+                <div id="forget_text">Not Registered? Create an Account</div>
               </div>
             </div>
           </div>
