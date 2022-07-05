@@ -3,7 +3,7 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
-#body_stuff {
+#body_stuffing {
   position: relative;
   height: 100vh;
   background: #FFFFFF;
@@ -14,13 +14,13 @@
   align-items: center;
   color: purple;
 }
-#testing{
+#testing_stuff{
   display:block;
   justify-content:center;
   align-items:center;
 }
 
-#subheading{
+#subheading_stuff{
   color:purple;
   font-size:3.75em;
   font-weight:100;
@@ -42,7 +42,7 @@
 }
 
 
-#main__btn {
+#main__btns {
   display:block;
   margin-left:2.8em;
   font-size: 1.5rem;
@@ -64,12 +64,12 @@
 
 
 
-#main__btn:hover {
+#main__btns:hover {
   border-radius:2em;
   color: #fff;
   
 }
-#main__btn:hover:after {
+#main__btns:hover:after {
   width: 100%;
 }
 #elements{
@@ -174,7 +174,7 @@
 #Image:hover{
   top:0.02em
 }
-#icon{
+#icon_stuff{
   text-align:center;
   justify-content:center;
   color:black;
@@ -196,29 +196,29 @@
   font-weight: 100;
 }
 
-#form_contents{
+#form_contents_stuff{
   display:block;
   margin-left: -1rem;
   margin-bottom: 6.5rem;
   
 }
 
-#plus_icon{
+#plus_icons{
   margin-left: 0.3em;
 }
-#bi_icon{
+#bi_icons{
   margin-left: 0.3em;
 }
-#download_icon{
+#download_icons{
   margin-left: 0.2em;
 }
 
 
-#main__btn:first-child{
+#main__btns:first-child{
  padding: 0.5em 3.7em;
   
 }
-#main__btn:last-child{
+#main__btns:last-child{
   position:absolute;
   margin-left: 2.5rem;
 }
