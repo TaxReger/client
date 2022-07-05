@@ -1,13 +1,14 @@
-import { useState } from 'react';
+import { Component, useState } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { AuthContext, setAccount, useAuthContext } from './funcs/auth';
 import SignInView from './pages/SignIn';
 import TableView from './pages/TableView';
 
 const Gateway = () => {
-  const [isSignedIn, setisSignedIn] = useState(false);
+  const { account } = useAuthContext();
 
-  if (!isSignedIn) return SignInView();
+  if (!account) return SignInView();
   return TableView();
 };
 

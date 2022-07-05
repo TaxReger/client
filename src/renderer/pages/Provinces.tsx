@@ -1,4 +1,4 @@
-import '../Provinces.css';
+import './Provinces.css';
 
 export default function SignInView() {
   return (
