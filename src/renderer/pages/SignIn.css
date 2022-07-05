@@ -6,7 +6,7 @@
 * body_stuff {
   position: relative;
   height: 100vh;
-  background: #FFFFFF;
+  background: #ffffff;
   font-family: 'Montserrat', sans-serif;
   overflow-y: hidden;
   display: flex;
@@ -14,36 +14,32 @@
   align-items: center;
   color: purple;
 }
-#testing{
+#testing {
   margin-top: 7em;
-  display:box;
-  justify-content:center;
-  align-items:center;
+  display: box;
+  justify-content: center;
+  align-items: center;
 }
 
-#subheading{
-  color:purple;
-  font-size:3.75em;
-  font-weight:100;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
+#subheading {
+  color: purple;
+  font-size: 3.75em;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-
-#header{
-  margin-bottom:0.5em;
+#header {
+  margin-bottom: 0.5em;
   font-family: 'Montserrat', sans-serif;
   font-size: 7em;
   color: Black;
-  font-weight:400;
-  
-  
+  font-weight: 400;
 }
 
-
 #main__btn {
-  margin-left:2.8em;
+  margin-left: 2.8em;
   font-size: 1.5rem;
   background: #833ab4;
 
@@ -56,142 +52,117 @@
   position: relative;
   transition: all 0.3s ease;
   outline: none;
-  margin-right:7rem;
+  margin-right: 7rem;
 }
 
-
-
-
 #main__btn:hover {
-  border-radius:2em;
+  border-radius: 2em;
   color: #fff;
-  
 }
 #main__btn:hover:after {
   width: 100%;
 }
-#elements{
-  margin-right:2em;
-  width:20em;
-  height:2em;
-  font-size:2em;
-  margin-bottom:1em;
-  justify-content:center;
-
-  
+#elements {
+  margin-right: 2em;
+  width: 20em;
+  height: 2em;
+  font-size: 2em;
+  margin-bottom: 1em;
+  justify-content: center;
 }
 
-
-#form{
-   font-size:0.5em;
-   margin-left:8em;
-  align-items:center;
-  text-align:center;
-  
-  
+#form {
+  font-size: 0.5em;
+  margin-left: 8em;
+  align-items: center;
+  text-align: center;
 }
 
-
-#create{
- 
+#create {
   font-size: 3em;
   transition: all 0.3s ease;
 }
-#create:hover{
+#create:hover {
   color: black;
-  
 }
 
-
 #forgot {
-  text-align:center;
-  margin-left:5em;
+  text-align: center;
+  margin-left: 5em;
   font-size: 1rem;
   background: black;
 
   padding: 0.5em 1em;
   border: none;
-  border-radius:1em;
+  border-radius: 1em;
   color: #fff;
   margin-top: 0.1rem;
-  text-align:center;
-  margin-right:4rem;
+  text-align: center;
+  margin-right: 4rem;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
   outline: none;
 }
 #forgot:hover {
-  border-radius:0.4em;
-  
-  
+  border-radius: 0.4em;
 }
-#container{
+#container {
   background-color: purple;
   color: white;
-  overflow:hidden;
-  position:absolute;
-  align-content:center;
+  overflow: hidden;
+  position: absolute;
+  align-content: center;
   top: 0.25em;
   left: -1em;
   padding: 2em 1em 2em 103.3em;
-  top:-1em;
+  top: -1em;
 }
-#forget_text{
+#forget_text {
   margin-top: -0.6rem;
   margin-left: 0.5rem;
-  font-size:1em;
-  text-align:center;
+  font-size: 1em;
+  text-align: center;
   transition: alll 1s ease;
-  cursor:pointer;
+  cursor: pointer;
 }
- 
-#contents p{
-  position:absolute;
+
+#contents p {
+  position: absolute;
   top: 0.25em;
   left: 2em;
   top: 0.8em;
-  color:white;
-  font-weight:light;
+  color: white;
+  font-weight: light;
   transition: all 0.5s ease-in-out;
-  cursor:pointer;
-  
+  cursor: pointer;
 }
 
-#contents p:hover{
+#contents p:hover {
   top: 0.5em;
-  color:yellow;
-  cursor:pointer;
-  
+  color: yellow;
+  cursor: pointer;
 }
-#Image{
-  position:absolute;
-  width:30px;
+#Image {
+  position: absolute;
+  width: 30px;
   right: 4em;
   top: 1.2em;
   transition: all 1s ease-in-out;
-  
 }
-#Image:hover{
-  top:0.02em
+#Image:hover {
+  top: 0.02em;
 }
-#icon{
-  text-align:center;
-  justify-content:center;
-  color:black;
-  font-size:4em;
-  
+#icon {
+  text-align: center;
+  justify-content: center;
+  color: black;
+  font-size: 4em;
 }
 
-#lower_form{
+#lower_form {
   margin-top: -1em;
-  text-align:center;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
-

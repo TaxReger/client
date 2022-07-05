@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { getAccount, signIn, useAuthContext } from '../funcs/auth';
-import '../App.css';
+import './SignIn.css';
 
 export default function SignInView() {
   const [email, setEmail] = useState<string>('');
