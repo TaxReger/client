@@ -1,5 +1,5 @@
+import { useContext, createContext } from 'react';
 import axios from 'axios';
-import settings from 'electron-settings';
 import { API_URL } from '../constants';
 
 export type Account = {
@@ -20,17 +20,27 @@ export type AuthResponse = {
  * @returns A JWT String or null
  */
 export const getTokens = async () => {
-  return (await settings.get('JWT_TOKENS')) as unknown;
+  const str = window.localStorage.getItem('JWT_TOKENS');
+
+  if (str) {
+    return JSON.parse(str);
+  }
+  return null;
 };
 export const setTokens = async (tokens: any) => {
-  await settings.set('JWT_TOKENS', tokens);
+  window.localStorage.setItem('JWT_TOKENS', JSON.stringify(tokens));
 };
 
-export const getAccount = async () => {
-  return (await settings.get('ACTIVE_ACCOUNT')) as unknown;
+export const getAccount = () => {
+  const str = window.localStorage.getItem('ACTIVE_ACCOUNT');
+
+  if (str) {
+    return JSON.parse(str) as Account;
+  }
+  return null;
 };
-export const setAccount = async (account: any) => {
-  await settings.set('ACTIVE_ACCOUNT', account);
+export const setAccount = (account: any) => {
+  window.localStorage.setItem('ACTIVE_ACCOUNT', JSON.stringify(account));
 };
 
 // Ref: https://stackoverflow.com/a/69058154
@@ -45,11 +55,8 @@ export const isTokenExpired = (token: string) =>
 
 export const handleGenericAuthResponse = async (data: AuthResponse) => {
   const { refreshToken, accessToken, account } = data;
-
-  await setTokens({ refreshToken, accessToken });
-  await setAccount(account);
-
-  // TODO: Pass to Context Provider?
+  setTokens({ refreshToken, accessToken });
+  setAccount(account);
 };
 export const signIn = async (email: string, password: string) => {
   const response = await axios.post(`${API_URL}/auth/login`, {
@@ -59,3 +66,26 @@ export const signIn = async (email: string, password: string) => {
 
   await handleGenericAuthResponse(response.data);
 };
+
+export const signOut = () => {
+  window.localStorage.removeItem('JWT_TOKENS');
+  window.localStorage.removeItem('ACTIVE_ACCOUNT');
+};
+
+/// Context Logic
+
+type AuthContextProp = {
+  account: Account | null;
+  setAccount: (v: Account | null) => void;
+};
+export const AuthContext = createContext<AuthContextProp | undefined>(
+  undefined
+);
+
+export function useAuthContext() {
+  const context = useContext(AuthContext);
+
+  if (context === undefined)
+    throw new Error('Auth Context used outside provider');
+  return context;
+}

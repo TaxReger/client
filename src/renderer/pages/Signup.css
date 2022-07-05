@@ -2,10 +2,10 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
- body {
+body {
   position: relative;
   height: 100vh;
-  background: #FFFFFF;
+  background: #ffffff;
   font-family: 'Montserrat', sans-serif;
   overflow-y: hidden;
   display: flex;
@@ -13,32 +13,30 @@
   align-items: center;
   color: purple;
 }
-#subheading{
-  position:relative;
+#subheading {
+  position: relative;
   margin-top: 0;
-  color:purple;
-  margin-left:2.5em;
-  font-size:60px;
-  font-weight:100;
+  color: purple;
+  margin-left: 2.5em;
+  font-size: 60px;
+  font-weight: 100;
 }
 
-#header{
+#header {
   margin-left: 3em;
-  margin-bottom:0.7em;
-  position:relative;
+  margin-bottom: 0.7em;
+  position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   color: Black;
- 
-  font-weight:400;
-  
-  
+
+  font-weight: 400;
 }
 #main__btn {
-  margin-left:3.5em;
+  margin-left: 3.5em;
   font-size: 1.5rem;
   background: #833ab4;
-  
+
   padding: 5px 60px;
   border: none;
   border-radius: 5px;
@@ -57,81 +55,73 @@
   text-decoration: none;
 }
 
-
-
 #main__btn:hover {
-  border-radius:2em;
+  border-radius: 2em;
   color: white;
   background-color: black;
-  
 }
 #main__btn:hover:after {
   width: 100%;
 }
-#elements{
-  width:20em;
-  height:2em;
-  font-size:2em;
-  margin-bottom:1em;
-  margin-left:4.5em;
+#elements {
+  width: 20em;
+  height: 2em;
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-left: 4.5em;
 }
-#form{
-   font-size:0.5em;
-   margin-left:80px;
-  
+#form {
+  font-size: 0.5em;
+  margin-left: 80px;
 }
 
-#container{
+#container {
   background-color: purple;
   color: white;
-  overflow:hidden;
-  position:absolute;
-  align-content:center;
+  overflow: hidden;
+  position: absolute;
+  align-content: center;
   top: 0.25em;
   left: -1em;
   padding: 2em 1em 2em 103.3em;
-  top:-1em;
+  top: -1em;
 }
-#contents p{
-  position:absolute;
+#contents p {
+  position: absolute;
   top: 0.25em;
   left: 2em;
   top: 0.8em;
-  color:white;
-  font-weight:light;
+  color: white;
+  font-weight: light;
   transition: all 0.5s ease-in-out;
-  
 }
 
-#contents p:hover{
+#contents p:hover {
   top: 0.5em;
-  color:yellow;
-  
+  color: yellow;
 }
-#Image{
-  position:absolute;
-  width:30px;
+#Image {
+  position: absolute;
+  width: 30px;
   right: 4em;
   top: 1.2em;
   transition: all 1s ease-in-out;
-  
 }
-#Image:hover{
-  top:0.02em
-}
-
-#testing{
-  text-align:center;
-  justify-content:center;
-  align-items:center;
-  margin-right:8em;
+#Image:hover {
+  top: 0.02em;
 }
 
-#icon{
-  position:box;
-  width:6em;
+#testing {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8em;
+}
+
+#icon {
+  position: box;
+  width: 6em;
   margin-left: 10em;
-  margin-bottom:-2em;
-  margin-top:1em;
+  margin-bottom: -2em;
+  margin-top: 1em;
 }
-
