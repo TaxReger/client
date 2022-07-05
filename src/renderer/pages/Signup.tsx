@@ -1,7 +1,7 @@
 import '../Signup.css';
 
 export default function SignUpView() {
-  return (  
+  return (
     <div>
 <nav className="navbar navbar-light bg-dark">
   <div className="container-fluid">
