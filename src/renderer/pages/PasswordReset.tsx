@@ -15,15 +15,8 @@ export default function PasswordResetView() {
           </div>
           <div id="form_contents">
             <form action="" className="signInForm" id="form">
-              <input id="elements" placeholder="username" type="text" />
-              <br />
-              <input id="elements" placeholder="password" type="text" /> <br />
-              <input
-                id="elements"
-                placeholder="re-enter password"
-                type="password"
-              />{' '}
-              <br />
+              <input id="elements" placeholder="email" type="text" />
+              <br></br>
               <button type="button" id="main__btn">
                 Save
               </button>
@@ -32,7 +25,7 @@ export default function PasswordResetView() {
             </form>
           </div>
           <p>
-            <Link to="/"> Sign In Instead</Link>
+            <Link id="forget_text_z" to="/"> Sign In Instead</Link>
           </p>
         </div>
       </div>
