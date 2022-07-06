@@ -3,23 +3,16 @@ import './Provinces.css';
 export default function ProvinceView() {
   return (
     <div>
-      <nav className="navbar navbar-light bg-dark">
-        <div className="container-fluid">
-          <a className="navbar-brand text-light" href="#">
-            Tax Registration Program{' '}
-          </a>
-        </div>
-      </nav>
-      <div id="body_stuff">
-        <div id="testing">
-          <div id="titles">
-            <h1 id="icon">
+      <div id="body_stuff_a">
+        <div id="testing_a">
+          <div id="titles_a">
+            <h1 id="icon_a">
               <i className="bi bi-geo-alt" />
             </h1>
 
-            <p id="subheading">Provinces</p>
+            <p id="subheading_a">Province</p>
           </div>
-          <div id="form_contents">
+          <div id="form_contents_a">
             <form action="" className="signInForm" id="form">
               <select name="Provinces" id="provinces">
                 <option value="volvo">Quebec</option>
@@ -28,7 +21,7 @@ export default function ProvinceView() {
             </form>
 
             <br />
-            <button type="button" id="main__btn">
+            <button type="button" id="main__btn_a">
               Next
             </button>
             <br />
