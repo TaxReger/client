@@ -68,6 +68,7 @@ export const signIn = async (email: string, password: string) => {
 };
 
 export const signOut = () => {
+  console.log('Done');
   window.localStorage.removeItem('JWT_TOKENS');
   window.localStorage.removeItem('ACTIVE_ACCOUNT');
 };

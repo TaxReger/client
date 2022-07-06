@@ -7,9 +7,9 @@ const container = document.getElementById('root')!;
 const root = createRoot(container);
 root.render(
   <AuthProvider>
-  {/* <Layout> */}
+    <Layout>
       <App />
-    {/* </Layout> */}
+    </Layout>
   </AuthProvider>
 );
 
