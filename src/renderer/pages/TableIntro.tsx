@@ -10,6 +10,7 @@ export default function TableIntroView() {
     
     
     
+    
   </div>
 </nav>
   <div id="body_stuffing">

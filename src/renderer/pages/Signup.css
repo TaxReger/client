@@ -2,7 +2,7 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
- * body_stuff {
+ * body_stuff_z {
 
   position: relative;
   height: 100vh;
@@ -14,7 +14,11 @@
   align-items: center;
   color: purple;
 }
-#header{
+#testing_z{
+  margin-top: 7.5em;
+}
+#header_z{
+  margin-top: 5em;
   margin-bottom:0.5em;
   font-family: 'Montserrat', sans-serif;
   font-size: 7em;
@@ -23,7 +27,7 @@
 }
 
 
-#main__btn {
+#main__btn_z {
 
   margin-left:2.8em;
   font-size: 1.5rem;
@@ -41,17 +45,17 @@
 }
 
 
-#main__btn:hover {
+#main__btn_z:hover {
 
   border-radius:2em;
   color: #fff;
   
 }
-#main__btn:hover:after {
+#main__btn_z:hover:after {
   width: 100%;
 }
 
-#elements{
+#elements_z{
   margin-right:2em;
   width:20em;
   height:2em;
