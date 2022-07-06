@@ -25,7 +25,7 @@ export default function PasswordResetView() {
             </form>
           </div>
           <p>
-            <Link id="forget_text" to="/"> Sign In Instead</Link>
+            <Link id="forget_text_z" to="/"> Sign In Instead</Link>
           </p>
         </div>
       </div>
