@@ -2,7 +2,7 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
-body {
+#body_b {
   position: relative;
   height: 100vh;
   background: #FFFFFF;
@@ -13,13 +13,14 @@ body {
   align-items: center;
   color: purple;
 }
-#subheading{
-  position:box;
-  margin-top: 0;
+#subheading_b{
+ 
   color:purple;
-  margin-left:2.5em;
-  font-size:60px;
+  font-size:3.75em;
   font-weight:100;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
 
 #header{
@@ -35,8 +36,8 @@ body {
   
   
 }
-#main__btn {
-  display:box;
+#main__btn_b {
+  display:inline-block;
   font-size: 1.3rem;
   background: #833ab4;
   padding: 5px 60px;
@@ -47,29 +48,23 @@ body {
   position: relative;
   transition: all 1s ease;
   outline: none;
-  margin-left: 4.7em;
+  text-align:center;
+  margin-top: -2rem;
+  margin-left: 5rem;
 }
 
  
 
 
 
-#main__btn:hover {
+#main__btn_b:hover {
   border-radius:2em;
   color: purple;
   background-color: black;
   
 }
-#main__btn:hover:after {
+#main__btn_b:hover:after {
   width: 100%;
-}
-#elements{
-  text-align:center;
-  width:20em;
-  height:2em;
-  font-size:2em;
-  margin-bottom:1em;
-  
 }
 
 #form{
@@ -78,58 +73,11 @@ body {
   
 }
 
-#container{
-  background-color: purple;
-  color: white;
-  overflow:hidden;
-  position:absolute;
-  align-content:center;
-  top: 0.25em;
-  left: -1em;
-  padding: 2em 1em 2em 103.3em;
-  top:-1em;
-  justify-content:center;
- 
-}
-
-#contents p{
-  position:absolute;
-  top: 0.25em;
-  left: 2em;
-  top: 0.8em;
-  color:white;
-  font-weight:light;
-  transition: all 0.5s ease-in-out;
-  cursor:pointer;
-  
-}
-
-#contents p:hover{
-  top: 0.5em;
-  color:yellow;
-  
-}
-#Image{
-  position:absolute;
-  width:30px;
-  right: 4em;
-  top: 1.2em;
-  transition: all 1s ease-in-out;
-  
-}
-#Image:hover{
-  top:0.02em
-}
-#testing{
-  justify-content:center;
-  display:inline-block;
- 
-}
 
 #store_options{
-  display:box;
+  display: inline-block;
   text-align:center;
-  margin-left: 0.2em;
+  margin-left: -2.7rem;
   margin-bottom:1em;
   justify-content:center;
   background-color: white;
@@ -138,12 +86,12 @@ body {
   font-weight: 100;
 }
 
-#icon{
-  position:box;
-  width:6em;
-  margin-left: 13em;
-  margin-bottom:-2em;
-  margin-top:1em;
+#icon_b{
+  text-align:center;
+  justify-content:center;
+  color:black;
+  font-size:5em;
+  margin-left:0em;
 }
 
 

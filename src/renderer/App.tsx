@@ -8,6 +8,7 @@ import SignUpView from './pages/Signup';
 import TableIntroView from './pages/TableIntro';
 import TableView from './pages/TableView';
 import PasswordResetView from './pages/PasswordReset';
+import StoreView from './pages/Store';
 
 const Gateway = () => {
   const { account } = useAuthContext();

@@ -1,36 +1,37 @@
-import './Provinces.css';
+import './Store.css';
 
-export default function SignInView() {
+export default function StoreView() {
   return (
     <div>
-      <div id="container">
-        <div id="contents">
-          <img src="assets\icons\church.png" alt="church" id="Image" />
-          <p> Tax Registration Program</p>
-        </div>
-      </div>
-      <div>
-        <div id="testing">
-          <div>
-            <img src="assets\icons\store.jpg" id="icon" alt="store" />
-            <p id="header"> Store </p>
-          </div>
+       <div id="body_b">
 
-          <form action="" className="signInForm" id="form">
-            <select name="Store_options" id="store_options">
-              <option value="volvo">Add new store</option>
-              <option value="volvo">Search for existing store </option>
-            </select>
+<div id="testing_b">
 
-            <br />
-            <button type="button" id="main__btn">
-              Next
-            </button>
-            <br />
-            <br />
-          </form>
-        </div>
-      </div>
+  <div id="titles">
+    
+    <h1 id = "icon_b"><i className="bi bi-shop"></i></h1>
+   
+ 
+    <p id="subheading_b">Store </p>
+    
+  </div>
+<div id="form_contents">
+
+   <form action="" className="signInForm" id ="form">
+    <select name="Provinces" id="store_options">
+<option value="volvo">Choose a store</option>
+      <option value="volvo">Add a store</option>
+      
+    </select>
+  </form>
+    
+
+   <br></br>
+     <button type="button" id="main__btn_b">Next</button><br></br><br></br>
+    </div>
+  
+</div>
+</div>
     </div>
   );
 }
