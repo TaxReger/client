@@ -23,7 +23,7 @@ export default function SignInView() {
   return (
     <div>
       {authState === AuthState.FAILED && (
-        <div className="alert alert-danger" role="alert">
+        <div className="alert alert-danger" id ="alert" role="alert">
           Incorrect Username/Password
         </div>
       )}
