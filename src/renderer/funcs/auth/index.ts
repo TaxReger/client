@@ -67,8 +67,24 @@ export const signIn = async (email: string, password: string) => {
   await handleGenericAuthResponse(response.data);
 };
 
+export const signUp = async (email: string, password: string) => {
+  const usageResponse = await axios.post(`${API_URL}/auth/flow/available`, {
+    email,
+  });
+
+  if (usageResponse.data.inUse === true) {
+    throw new Error('EMAIL_IN_USE');
+  }
+
+  const response = await axios.post(`${API_URL}/auth/register`, {
+    email,
+    password,
+  });
+
+  await handleGenericAuthResponse(response.data);
+};
+
 export const signOut = () => {
-  console.log('Done');
   window.localStorage.removeItem('JWT_TOKENS');
   window.localStorage.removeItem('ACTIVE_ACCOUNT');
 };
@@ -89,4 +105,11 @@ export function useAuthContext() {
   if (context === undefined)
     throw new Error('Auth Context used outside provider');
   return context;
+}
+
+export enum AuthState {
+  IDLE,
+  LOADING,
+  SUCCESS,
+  FAILED,
 }

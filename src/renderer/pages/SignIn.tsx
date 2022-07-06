@@ -1,29 +1,32 @@
 import React, { useState } from 'react';
-import { getAccount, signIn, useAuthContext } from '../funcs/auth';
+import { Outlet, Link } from 'react-router-dom';
+import { AuthState, getAccount, signIn, useAuthContext } from '../funcs/auth';
 import './SignIn.css';
 
 export default function SignInView() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
-  const [working, setWorking] = useState(false);
+  const [authState, setAuthState] = useState<AuthState>(AuthState.IDLE);
   const { setAccount } = useAuthContext();
   const handleSubmit: React.FormEventHandler = async (e) => {
-    setWorking(true);
+    setAuthState(AuthState.LOADING);
     try {
       e.preventDefault();
       await signIn(email, password);
       setAccount(getAccount());
+      setAuthState(AuthState.SUCCESS);
     } catch (err) {
       console.log('error', err);
+      setAuthState(AuthState.FAILED);
     }
-
-    setWorking(false);
   };
   return (
     <div>
-      <div className="alert alert-danger" role="alert">
-        Incorrect Username/Password 
-</div>
+      {authState === AuthState.FAILED && (
+        <div className="alert alert-danger" role="alert">
+          Incorrect Username/Password
+        </div>
+      )}
       <div>
         <div id="main_body">
           <div id="body_stuff">
@@ -58,18 +61,20 @@ export default function SignInView() {
                     type="submit"
                     id="main__btn"
                     value="Submit"
-                    disabled={working}
+                    disabled={authState === AuthState.LOADING}
                   />
                 </form>
                 <br />
                 <br />
                 <div id="lower_form">
-                  <button type="button" id="forgot">
+                  <Link id="forgot" to="/resetPassword">
                     Forgot Password?
-                  </button>
+                  </Link>
                   <br />
                   <br />
-                  <div id="forget_text">Not Registered? Create an Account</div>
+                  <Link id="forget_text" to="/signup">
+                    Not Registered? Create an Account
+                  </Link>
                 </div>
               </div>
             </div>

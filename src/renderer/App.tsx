@@ -21,6 +21,8 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Gateway />} />
+        <Route path="signUp" element={<SignUpView />} />
+        <Route path="resetPassword" element={<PasswordResetView />} />
       </Routes>
     </Router>
   );
