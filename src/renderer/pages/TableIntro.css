@@ -30,16 +30,6 @@
 }
 
 
-#header{
-  margin-bottom:0.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7em;
-  color: Black;
-  font-weight:400;
-  text-align:center;
-  
-  
-}
 
 
 #main__btns {
@@ -72,129 +62,6 @@
 #main__btns:hover:after {
   width: 100%;
 }
-#elements{
-  margin-right:2em;
-  width:20em;
-  height:2em;
-  font-size:2.5em;
-  margin-bottom:1em;
-  justify-content:center;
-
-  
-}
-
-
-#form{
-   font-size:0.5em;
-   margin-left:8em;
-  align-items:center;
-  text-align:center;
-  
-  
-}
-
-
-#create{
- 
-  font-size: 3em;
-  transition: all 0.3s ease;
-}
-#create:hover{
-  color: black;
-  
-}
-
-
-#forgot {
-  margin-left:5em;
-  font-size: 1rem;
-  background: black;
-  
-  padding: 0.5em 1em;
-  border: none;
-  border-radius:1em;
-  color: #fff;
-  margin-top: 0.5rem;
-  text-align:center;
-  margin-right:7rem;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.3s ease;
-  outline: none;
-}
-#forgot:hover {
-  border-radius:0.4em;
-  
-  
-}
-#container{
-  background-color: purple;
-  color: white;
-  overflow:hidden;
-  position:absolute;
-  align-content:center;
-  top: 0.25em;
-  left: -1em;
-  padding: 2em 1em 2em 103.3em;
-  top:-1em;
-}
-#forget_text{
-  font-size:2em;
-  margin-right:2em;
-  transition: alll 1s ease;
-  cursor:pointer;
-}
- 
-#contents p{
-  position:absolute;
-  top: 0.25em;
-  left: 2em;
-  top: 0.8em;
-  color:white;
-  font-weight:light;
-  transition: all 0.5s ease-in-out;
-  cursor:pointer;
-  
-}
-
-#contents p:hover{
-  top: 0.5em;
-  color:yellow;
-  cursor:pointer;
-  
-}
-#Image{
-  position:absolute;
-  width:30px;
-  right: 4em;
-  top: 1.2em;
-  transition: all 1s ease-in-out;
-  
-}
-#Image:hover{
-  top:0.02em
-}
-#icon_stuff{
-  text-align:center;
-  justify-content:center;
-  color:black;
-  font-size:6em;
-  margin-left:0em;
-  
-}
-
-
-#form{
-  display:block;
-  text-align:center;
-  margin-left: 0.1em;
-  margin-bottom:0.1em;
-  justify-content:center;
-  background-color: white;
-  color: black;
-  font-size: 2em;
-  font-weight: 100;
-}
 
 #form_contents_stuff{
   display:block;
@@ -223,3 +90,11 @@
   margin-left: 2.5rem;
 }
 
+#icon_stuff{
+  text-align:center;
+  justify-content:center;
+  color:black;
+  font-size:6em;
+  margin-left:0em;
+  
+}

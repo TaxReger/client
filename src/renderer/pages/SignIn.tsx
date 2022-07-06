@@ -21,6 +21,9 @@ export default function SignInView() {
   };
   return (
     <div>
+      <div className="alert alert-danger" role="alert">
+        Incorrect Username/Password 
+</div>
       <div>
         <div id="main_body">
           <div id="body_stuff">
