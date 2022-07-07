@@ -79,6 +79,11 @@
 #download_icons{
   margin-left: 0.2em;
 }
+#main__btns:hover{
+  background-color: black;
+
+  color:white;
+}
 
 
 #main__btns:first-child{
