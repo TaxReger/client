@@ -15,13 +15,14 @@
   color: purple;
 }
 #testing{
+  margin-left: 1rem;
   display:box;
   justify-content:left;
   align-items:left;
 }
 
 #subheading{
-  margin-top: 1em;
+  margin-top: 1.3em;
   margin-bottom: 1em;
   margin-left: 0.5em;
   color:purple;
@@ -236,4 +237,19 @@
 
 #save_icon{
   margin-left: 0.5rem;
+}
+
+#file_icon{
+  position: absolute;
+  
+  top: 0.75em;
+  left: 4em;
+  text-align: center;
+  font-size: 15em;
+  box-shadow: black;
+  transition: all 1s ease-in-out;
+}
+#file_icon:hover{
+  font-size: 15.2em;
+  color:black;
 }

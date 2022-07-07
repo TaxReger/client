@@ -72,9 +72,11 @@ export default function SignInView() {
                   </Link>
                   <br />
                   <br />
+                  <div id = "not_reg">
                   <Link id="forget_text" to="/signup">
                     Not Registered? Create an Account
                   </Link>
+                  </div>
                 </div>
               </div>
             </div>

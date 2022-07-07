@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import './OntarioForm.css';
+import './QuebecForm.css';
 
-export default function OntarioFormView() {
+export default function QuebecFormView() {
   return (
     <div>
      
@@ -21,12 +21,12 @@ export default function OntarioFormView() {
     <div id="testing">
     
       <div id="titles">
-        <p id="subheading">Ottawa Registration Form</p>
+        <p id="subheading">Quebec Registration Form</p>
         
       </div>
     <div id="form_contents">
 
-     <form>
+     <form id = "change">
   <div className="form-group">
     <label htmlFor="exampleInputEmail1">Date of Invoice</label>
     <input type="date" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
@@ -37,12 +37,22 @@ export default function OntarioFormView() {
     <label htmlFor="exampleInputPassword1">Item</label>
     <input type="text" className="form-control" id="exampleInputPassword1" placeholder=""></input>
   </div>
-        <div className="col">
-    <label htmlFor="exampleInputPassword1">HST Number</label>
-    <input type="text" className="form-control" id="exampleInputPassword1" placeholder=""></input>
-          <br></br>
-  </div>
+  
        </div>
+       <div className = "row">
+        <div className ="col">
+    <label htmlFor="exampleInputPassword1">TPS Number</label>
+    <input type="text" className ="form-control" id="exampleInputPassword1" placeholder=""></input>
+  </div>
+        <div className ="col">
+    <label htmlFor="exampleInputPassword1">TPQ Number</label>
+    <input type="text" className ="form-control" id="exampleInputPassword1" placeholder=""></input>
+  </div>
+    
+         <br></br>
+         <br></br>
+       </div>
+
        <div className = "row">
         <div className ="col">
     <label htmlFor="exampleInputPassword1">Cost before Taxes</label>
@@ -91,9 +101,7 @@ export default function OntarioFormView() {
           
   </div>
        <br></br>
-            
-  <button type="submit" className="btn btn-secondary">Save</button>
-         <br></br>
+
          
     
           
@@ -101,6 +109,7 @@ export default function OntarioFormView() {
        </div>         
              
 </form>
+<button type="submit" className="btn btn-secondary" id = "save_btn">Save</button>
         
 
 

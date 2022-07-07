@@ -11,11 +11,12 @@ import PasswordResetView from './pages/PasswordReset';
 import StoreView from './pages/Store';
 import SearchStoreView from './pages/searchstore';
 import OntarioFormView from './pages/OntarioForm';
+import QuebecFormView from './pages/QuebecForm';
 
 const Gateway = () => {
   const { account } = useAuthContext();
 
-  if (!account) return SignInView();
+  if (!account) return SearchStoreView();
   return TableIntroView();
 };
 
