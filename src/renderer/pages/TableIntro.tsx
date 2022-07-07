@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './TableIntro.css';
 
 export default function TableIntroView() {
@@ -13,18 +14,24 @@ export default function TableIntroView() {
             <p id="subheading_stuff"> </p>
           </div>
           <div id="form_contents_stuff">
-            <button type="button" id="main__btns">
-              View Table
-              <i className="bi bi-binoculars" id="bi_icons" />
-            </button>
-            <button type="button" id="main__btns">
-              Export Table
-              <i className="bi bi-download" id="download_icons" />
-            </button>
-            <button type="button" id="main__btns">
-              Add new Records
-              <i className="bi bi-plus-circle" id="plus_icons" />
-            </button>
+            <Link to="/search">
+              <div id="main__btns">
+                Search Table
+                <i className="bi bi-binoculars" id="bi_icons" />
+              </div>
+            </Link>
+            <Link to="/export">
+              <div id="main__btns">
+                Export Table
+                <i className="bi bi-download" id="download_icons" />
+              </div>
+            </Link>
+            <Link to="/newPurchase">
+              <div id="main__btns">
+                Add new Records
+                <i className="bi bi-plus-circle" id="plus_icons" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
