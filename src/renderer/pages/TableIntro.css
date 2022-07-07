@@ -41,7 +41,7 @@
   color: #fff;
   margin-top: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
   outline: none;
   margin-right: 2rem;
 }
@@ -49,6 +49,7 @@
 #main__btns:hover {
   border-radius: 0.5em;
   color: #fff;
+  background-color: black;
 }
 #main__btns:hover:after {
   width: 100%;
