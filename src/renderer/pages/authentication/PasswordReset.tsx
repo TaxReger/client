@@ -14,7 +14,6 @@ export default function PasswordResetView() {
             <p id="subheading">Password Reset</p>
           </div>
           <div id="form_contents">
-           
             <form action="" className="signInForm" id="form">
               <input id="elements" placeholder="email" type="text" />
               <br />

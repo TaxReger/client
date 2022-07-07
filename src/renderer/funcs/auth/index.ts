@@ -19,7 +19,7 @@ export type AuthResponse = {
  * gets the JWT token stored
  * @returns A JWT String or null
  */
-export const getTokens = async () => {
+export const getTokens = () => {
   const str = window.localStorage.getItem('JWT_TOKENS');
 
   if (str) {

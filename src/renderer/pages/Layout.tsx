@@ -7,7 +7,6 @@ type Props = {
 export default function Layout({ children }: Props) {
   const { setAccount, account } = useAuthContext();
   const handleSignOut = async () => {
-    console.log('called');
     signOut();
     setAccount(getAccount());
   };

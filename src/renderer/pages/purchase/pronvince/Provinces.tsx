@@ -1,6 +1,9 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Provinces.css';
 
 export default function ProvinceView() {
+  const [province, setProvince] = useState<string>('qc');
   return (
     <div>
       <div id="body_stuff_a">
@@ -14,16 +17,20 @@ export default function ProvinceView() {
           </div>
           <div id="form_contents_a">
             <form action="" className="signInForm" id="form">
-              <select name="Provinces" id="provinces">
-                <option value="volvo">Quebec</option>
-                <option value="volvo">Ontario</option>
+              <select
+                name="Provinces"
+                id="provinces"
+                onChange={(e) => setProvince(e.target.value)}
+              >
+                <option value="qc">Quebec</option>
+                <option value="on">Ontario</option>
               </select>
             </form>
 
             <br />
-            <button type="button" id="main__btn_a">
-              Next
-            </button>
+            <Link to={`/selectStore?province=${province}`}>
+              <div id="main__btn_a">Next</div>
+            </Link>
             <br />
             <br />
           </div>
