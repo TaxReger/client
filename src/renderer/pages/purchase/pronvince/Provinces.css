@@ -44,10 +44,11 @@
   color: #fff;
   cursor: pointer;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
   outline: none;
   text-align: center;
-  margin-left: 5em;
+  
+  margin-left: 3.3em;
 }
 
 
@@ -56,6 +57,7 @@
 #main__btn_a:hover {
   border-radius:2em;
   color: #fff;
+  background-color: black;
   
 }
 #main__btn_a:hover:after {
@@ -82,7 +84,7 @@
   justify-content:center;
   color:black;
   font-size:5em;
-  margin-left:0em;
+  margin-left:-1rem;
   
 }
 
@@ -99,6 +101,9 @@
   font-weight: 100;
 }
 
+#form_contents_a{
+  margin-left:-5.7rem;
+}
 
 
 

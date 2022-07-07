@@ -1,0 +1,31 @@
+.main-container {
+  margin: 2rem;
+}
+
+.main-container input[type='text'] {
+  margin: 0rem 2rem 1rem 0rem;
+  width: 500px;
+  border-radius: 5px;
+  padding: 12px 20px;
+  border: 1px solid gray;
+}
+
+.main-container input[type='submit'] {
+  margin: 0rem 2rem 1rem 0rem;
+  width: 250px;
+  border-radius: 5px;
+  padding: 12px 20px;
+  border: 1px solid gray;
+}
+
+.section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#section_header {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+}

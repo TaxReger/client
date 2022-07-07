@@ -26,7 +26,7 @@ export default function TableIntroView() {
                 <i className="bi bi-download" id="download_icons" />
               </div>
             </Link>
-            <Link to="/newPurchase">
+            <Link to="/purchase/flow">
               <div id="main__btns">
                 Add new Records
                 <i className="bi bi-plus-circle" id="plus_icons" />
