@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import App from './App';
-import AuthProvider from './pages/AuthProvider';
+import AuthProvider from './pages/authentication/AuthProvider';
 import Layout from './pages/Layout';
 
 const container = document.getElementById('root')!;
