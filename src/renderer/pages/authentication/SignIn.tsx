@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
-import { Outlet, Link } from 'react-router-dom';
-import { AuthState, getAccount, signIn, useAuthContext } from '../funcs/auth';
+import { Link } from 'react-router-dom';
+import {
+  AuthState,
+  getAccount,
+  signIn,
+  useAuthContext,
+} from 'renderer/funcs/auth';
 import './SignIn.css';
 
 export default function SignInView() {
@@ -23,7 +28,7 @@ export default function SignInView() {
   return (
     <div>
       {authState === AuthState.FAILED && (
-        <div className="alert alert-danger" id ="alert" role="alert">
+        <div className="alert alert-danger" id="alert" role="alert">
           Incorrect Username/Password
         </div>
       )}
