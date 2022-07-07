@@ -12,7 +12,7 @@ export default function SearchStoreView() {
     <h1 id = "icon_b"><i className="bi bi-search"></i></h1>
    
  
-    <p id="subheading_b">Search </p>
+    <p id="subheading_b">Quebec Stores </p>
     
   </div>
 <div id="form_z">
@@ -26,6 +26,7 @@ export default function SearchStoreView() {
   </form>
     
     </div>
+    <h3 id = "cannot"> Can't Find your Store? <b>Add New Store</b></h3>
    
 </div>
 </div>

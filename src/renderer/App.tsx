@@ -12,7 +12,7 @@ import SignUpView from './pages/authentication/Signup';
 const Gateway = () => {
   const { account } = useAuthContext();
 
-  if (!account) return SignInView();
+  if (!account) return  SignInView();
   return TableIntroView();
 };
 
