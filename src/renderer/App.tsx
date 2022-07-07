@@ -10,6 +10,7 @@ import TableView from './pages/TableView';
 import PasswordResetView from './pages/PasswordReset';
 import StoreView from './pages/Store';
 import SearchStoreView from './pages/searchstore';
+import OntarioFormView from './pages/OntarioForm';
 
 const Gateway = () => {
   const { account } = useAuthContext();
