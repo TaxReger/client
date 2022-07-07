@@ -60,8 +60,9 @@ export default function StoreView() {
                       to={`/purchase/new?prov=${prov}&store=${JSON.stringify(
                         v
                       )}`}
+                      key={v.id}
                     >
-                      <div className="dropdown-row" key={v.id}>
+                      <div className="dropdown-row">
                         <span className="title"> {v.name}</span>
                         <span className="address"> {v.address}</span>
                       </div>
