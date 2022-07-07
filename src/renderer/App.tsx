@@ -16,7 +16,7 @@ import QuebecFormView from './pages/QuebecForm';
 const Gateway = () => {
   const { account } = useAuthContext();
 
-  if (!account) return SearchStoreView();
+  if (!account) return  SignInView();
   return TableIntroView();
 };
 
