@@ -9,24 +9,24 @@ export default function SearchStoreView() {
 
   <div id="titles">
     
-    <h1 id = "icon_b"><i className="bi bi-shop"></i></h1>
+    <h1 id = "icon_b"><i className="bi bi-search"></i></h1>
    
  
-    <p id="subheading_b">Store </p>
+    <p id="subheading_b">Search </p>
     
   </div>
-<div id="form_contents">
+<div id="form_z">
 
    <form action="" className="signInForm" id ="form">
-   <input id="elements" placeholder="Enter Store Name" type="text" />
+   <div className="input-group">
+  <input type="search" className="form-control rounded" placeholder="Search Store" aria-label="Search" aria-describedby="search-addon"  />
+  <button type="button" className="btn btn-outline-secondary">search</button>
+</div>
     
   </form>
     
-
-   <br></br>
-     <button type="button" id="main__btn_b">Next</button><br></br><br></br>
     </div>
-  
+   
 </div>
 </div>
     </div>
