@@ -16,7 +16,7 @@ import SearchStoreView from './pages/search/searchstore';
 const Gateway = () => {
   const { account } = useAuthContext();
 
-  if (!account) return SignInView();
+  if (!account) return  SignInView();
   return TableIntroView();
 };
 
