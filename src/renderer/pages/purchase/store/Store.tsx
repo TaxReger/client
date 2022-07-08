@@ -49,7 +49,7 @@ export default function StoreView() {
                 onChange={(e) => setText(e.target.value)}
               />
               <button type="button" onClick={handleSearch}>
-                Search
+              <i className="bi bi-search"></i>
               </button>
             </div>
             {result.length >= 1 ? (

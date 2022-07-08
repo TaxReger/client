@@ -83,6 +83,10 @@
   font-size: 5em;
   margin-left: 0em;
 }
+.add-store-dialog{
+  margin-top: -1rem;
+  margin-left: 5rem;
+}
 
 .add-store-dialog a {
   font-weight: bold;
@@ -107,7 +111,9 @@
 }
 
 .search-bar {
-  margin-bottom: 5px;
+  font-size: 1em;
+  margin-left: 4em;
+  margin-bottom: 2em;
 }
 
 .search-bar input {
