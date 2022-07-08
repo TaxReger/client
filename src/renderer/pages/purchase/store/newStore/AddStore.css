@@ -1,6 +1,9 @@
 .main-container {
   margin: 2rem;
 }
+#main_stuf{
+  margin-top: 2rem;
+}
 
 .main-container input[type='text'] {
   margin: 0rem 2rem 1rem 0rem;
@@ -23,9 +26,36 @@
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
+  color:purple;
 }
 #section_header {
   font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+#stuff_btn{
+  background-color: purple;
+  transition: all 0.5s ease-in-out;
+
+}
+#stuff_btn:hover{
+  background-color: black;
+  border-radius: 1em;
+}
+
+#file_icon{
+  position: absolute;
+  color:purple;
+  
+  top: 0.5em;
+  left: 4em;
+  text-align: center;
+  font-size: 18em;
+  box-shadow:black;
+  transition: all 1s ease-in-out;
+}
+#file_icon:hover{
+
+  font-size: 18em;
+  color:purple;
 }
