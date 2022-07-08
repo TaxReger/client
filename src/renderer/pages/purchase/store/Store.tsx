@@ -40,7 +40,7 @@ export default function StoreView() {
 
             <p id="subheading_b">{province} Stores </p>
           </div>
-
+          <div id = "lower_stuffs">
           <div className="search-container">
             <div className="search-bar">
               <input
@@ -49,7 +49,7 @@ export default function StoreView() {
                 onChange={(e) => setText(e.target.value)}
               />
               <button type="button" onClick={handleSearch}>
-                Search
+              <i className="bi bi-search"></i>
               </button>
             </div>
             {result.length >= 1 ? (
@@ -75,6 +75,7 @@ export default function StoreView() {
               addNewComponent
             )}
           </div>
+        </div>
         </div>
       </div>
     </div>

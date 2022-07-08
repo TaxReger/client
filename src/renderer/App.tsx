@@ -10,11 +10,11 @@ import SignUpView from './pages/authentication/Signup';
 import StoreView from './pages/purchase/store/Store';
 import AddStorePage from './pages/purchase/store/newStore/AddStore';
 import AddPurchasePage from './pages/purchase/newPurchase/NewPurchase';
+import SearchStoreView from './pages/search/searchstore';
 
 const Gateway = () => {
   const { account } = useAuthContext();
-
-  return <div>{!account ? SignInView() : TableIntroView()}</div>;
+ return <div>{!account ? SignInView() : TableIntroView()}</div>;
 };
 
 export default function App() {
