@@ -61,7 +61,7 @@ const AddPurchasePage: React.FC = () => {
       <div id="purchase_body">
         <div id="form_container">
           <div id="titles">
-            <p id="subheading">Add New Purchase</p>
+            <p id="subheading">Add New Record</p>
           </div>
           <div id="form_contents">
             <form id="change" onSubmit={handleSubmit}>
