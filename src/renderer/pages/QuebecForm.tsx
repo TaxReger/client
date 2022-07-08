@@ -9,7 +9,7 @@ export default function QuebecFormView() {
   
 
 
-  <div id="body_stuff">
+  <div id="body_stuff_dd">
     
   <h1 id = "file_icon">
   <div className="shadow-lg p-20 mb-10 bg-white rounded" id = "shadow">
@@ -18,10 +18,10 @@ export default function QuebecFormView() {
    
       </h1>
 
-    <div id="testing">
+    <div id="testing_d">
     
-      <div id="titles">
-        <p id="subheading">Quebec Registration Form</p>
+      <div id="titles_d">
+        <p id="subheading_d">Quebec Registration Form</p>
         
       </div>
     <div id="form_contents">
