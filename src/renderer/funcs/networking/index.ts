@@ -11,17 +11,19 @@ api.interceptors.request.use(async (config) => {
   const accessToken = tokens?.accessToken;
   const refreshToken = tokens?.refreshToken;
   if (!accessToken) return config;
-
   const expired = isTokenExpired(accessToken);
 
   if (expired && refreshToken) {
     try {
-      const response = await axios.get(`${API_URL}/auth/refresh`);
+      const response = await axios.get(`${API_URL}/auth/refresh`, {
+        headers: {
+          Authorization: `Bearer ${refreshToken}`,
+        },
+      });
       await handleGenericAuthResponse(response.data);
       config.headers = { Authorization: `Bearer ${response.data.accessToken}` };
       return config;
     } catch (err) {
-      console.log(err);
       return config;
     }
     // Refresh
@@ -57,6 +59,26 @@ export const addNewStore = async (
     tps,
     tvq,
     provinceId: prov === 'on' ? 1 : 2,
+  });
+  return response.data.data;
+};
+
+export const addNewPurchase = async (
+  storeId: number,
+  itemName: string,
+  cost: number,
+  date: Date,
+  beneficiary: string,
+  invoiceNumber: string,
+  chequeTotal: string
+) => {
+  const response = await api.post('/purchases/add', {
+    storeId,
+    dateOfInvoice: date,
+    itemName,
+    cost,
+    beneficiary,
+    invoiceNumber,
   });
   return response.data.data;
 };

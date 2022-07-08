@@ -1,5 +1,6 @@
 import React from 'react';
 import { getAccount, signOut, useAuthContext } from 'renderer/funcs/auth';
+import './Layout.css';
 
 type Props = {
   children: React.ReactNode;
@@ -13,7 +14,7 @@ export default function Layout({ children }: Props) {
 
   const userName = account?.email.split('@')?.[0];
   return (
-    <div>
+    <div className="main__container">
       <nav className="navbar navbar-light bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand text-light" href="/">

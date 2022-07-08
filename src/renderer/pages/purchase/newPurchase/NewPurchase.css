@@ -3,31 +3,33 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
-* body_stuff {
-  position: relative;
+#purchase_body {
   height: 100vh;
   background: #ffffff;
   font-family: 'Montserrat', sans-serif;
   overflow-y: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   color: purple;
 }
-#testing {
-  margin-top: 7em;
+#form_container {
+  margin: 2rem;
   display: box;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 #subheading {
+  margin-top: 4em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
   color: purple;
-  font-size: 3.75em;
+  font-size: 2em;
   font-weight: 100;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
 
 #header {
@@ -35,6 +37,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 7em;
   color: Black;
+
   font-weight: 400;
 }
 
@@ -63,17 +66,16 @@
   width: 100%;
 }
 #elements {
-  margin-right: 2em;
   width: 20em;
   height: 2em;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 1em;
   justify-content: center;
 }
 
 #form {
   font-size: 0.5em;
-  margin-left: 8em;
+
   align-items: center;
   text-align: center;
 }
@@ -87,7 +89,6 @@
 }
 
 #forgot {
-  text-align: center;
   margin-left: 5em;
   font-size: 1rem;
   background: black;
@@ -96,9 +97,9 @@
   border: none;
   border-radius: 1em;
   color: #fff;
-  margin-top: 0.1rem;
+  margin-top: 0.5rem;
   text-align: center;
-  margin-right: 4rem;
+  margin-right: 7rem;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
@@ -119,10 +120,8 @@
   top: -1em;
 }
 #forget_text {
-  margin-top: -0.6rem;
-  margin-left: 0.5rem;
-  font-size: 1em;
-  text-align: center;
+  font-size: 2em;
+  margin-right: 2em;
   transition: alll 1s ease;
   cursor: pointer;
 }
@@ -157,12 +156,73 @@
   text-align: center;
   justify-content: center;
   color: black;
-  font-size: 4em;
+  font-size: 5em;
+  margin-left: 0.5em;
+}
+#form_contents {
+  display: inline-block;
+  margin-left: 1em;
 }
 
-#lower_form {
-  margin-top: -1em;
-  text-align: center;
+.label_style {
+  color: black;
+  font-size: 1.5em;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+#item {
+  margin-right: 0.5em;
+}
+#items {
+  width: 20em;
+  height: 2em;
+  font-size: 1.5em;
+  margin-left: 5em;
+  margin-bottom: 1em;
   justify-content: center;
-  align-items: center;
+}
+
+#hst {
+  width: 20em;
+  height: 2em;
+  margin-left: 1em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+#cbt {
+  width: 18em;
+  height: 2em;
+  margin-left: 1em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+#save_icon {
+  margin-left: 0.5rem;
+}
+
+#file_icon {
+  top: 0.75em;
+  left: 4em;
+  text-align: center;
+  font-size: 15em;
+  box-shadow: black;
+  transition: all 1s ease-in-out;
+}
+#file_icon:hover {
+  font-size: 15.2em;
+  color: black;
+}
+
+#change {
+  margin-top: -1.9rem;
+}
+#save_btn {
+  margin: 1rem 0 1rem 0;
+}
+
+#form_section {
+  margin: 1rem 0 1rem 0;
 }
