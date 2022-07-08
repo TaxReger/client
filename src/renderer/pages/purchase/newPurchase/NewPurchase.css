@@ -249,3 +249,29 @@
 #form_section {
   margin: 1rem 0 1rem 0;
 }
+
+#file_icon{
+  position: absolute;
+  
+  top: 0.75em;
+  left: 3.4em;
+  text-align: center;
+  font-size: 18em;
+  box-shadow: black;
+  transition: all 1s ease-in-out;
+}
+#file_icon:hover{
+  font-size: 17.5em;
+  color:black;
+}
+#save_btn{
+  width:15em;
+  background-color: purple;
+  color:white;
+  transition: all 0.5s ease-in-out;
+}
+#save_btn:hover{
+  background-color:black;
+  border-radius: 1em;
+
+}

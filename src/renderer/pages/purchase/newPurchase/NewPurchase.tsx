@@ -59,6 +59,12 @@ const AddPurchasePage: React.FC = () => {
   return (
     <div>
       <div id="purchase_body">
+      <h1 id = "file_icon">
+  <div className="shadow-lg p-20 mb-10 bg-white rounded" id = "shadow">
+    <i className="bi bi-file-plus"></i>
+    </div>
+   
+      </h1>
         <div id="form_container">
           <div id="titles">
             <p id="subheading">Add New Record</p>
