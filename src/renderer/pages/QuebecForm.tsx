@@ -39,19 +39,7 @@ export default function QuebecFormView() {
   </div>
   
        </div>
-       <div className = "row">
-        <div className ="col">
-    <label htmlFor="exampleInputPassword1">TPS Number</label>
-    <input type="text" className ="form-control" id="exampleInputPassword1" placeholder=""></input>
-  </div>
-        <div className ="col">
-    <label htmlFor="exampleInputPassword1">TPQ Number</label>
-    <input type="text" className ="form-control" id="exampleInputPassword1" placeholder=""></input>
-  </div>
-    
-         <br></br>
-         <br></br>
-       </div>
+       
 
        <div className = "row">
         <div className ="col">
@@ -60,7 +48,8 @@ export default function QuebecFormView() {
   </div>
         <div className ="col">
     <label htmlFor="exampleInputPassword1">Cost after Taxes</label>
-    <input type="text" className ="form-control" id="exampleInputPassword1" placeholder=""></input>
+   
+    <input type="text" className ="form-control" id="disabledInput" disabled></input>
   </div>
     
          <br></br>
@@ -70,13 +59,13 @@ export default function QuebecFormView() {
         <div className ="col">
           <br></br>
     <label htmlFor="exampleInputPassword1">HST(ON)</label>
-    <input type="text" className ="form-control" id="exampleInputPassword1" placeholder=""></input>
+    <input type="text" className ="form-control" id="exampleInputPassword1"  disabled></input>
           
   </div>
         <div className ="col">
           <br></br>
     <label htmlFor="exampleInputPassword1">PST(ON)</label>
-    <input type="text" className="form-control" id="exampleInputPassword1" placeholder=""></input>
+    <input type="text" className="form-control" id="exampleInputPassword1"  disabled></input>
           <br></br>
           
   </div>
@@ -84,7 +73,7 @@ export default function QuebecFormView() {
        
         <div className="form-group">
     <label htmlFor="exampleInputPassword1">GST(ON)</label>
-    <input type="text" className="form-control" id="exampleInputPassword1" placeholder=""></input>
+    <input type="text" className="form-control" id="exampleInputPassword1"  disabled></input>
           <br></br>
           
   </div>

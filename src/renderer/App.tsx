@@ -12,6 +12,7 @@ import StoreView from './pages/purchase/store/Store';
 import AddStorePage from './pages/purchase/store/newStore/AddStore';
 import AddPurchasePage from './pages/purchase/newPurchase/NewPurchase';
 import SearchStoreView from './pages/search/searchstore';
+import QuebecFormView from './pages/QuebecForm';
 
 const Gateway = () => {
   const { account } = useAuthContext();
