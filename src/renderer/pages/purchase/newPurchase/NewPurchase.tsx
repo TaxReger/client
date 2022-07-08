@@ -167,7 +167,7 @@ const AddPurchasePage: React.FC = () => {
                     disabled
                   />
                 </label>
-                <label htmlFor="qst">
+                <label htmlFor="qst" id="label_qst">
                   QST
                   <input
                     type="text"

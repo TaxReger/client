@@ -4,6 +4,7 @@
  */
 
 #purchase_body {
+  margin-top: 1.3em;
   height: 100vh;
   background: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -183,12 +184,22 @@
 }
 
 #hst {
-  width: 20em;
+  width: 10em;
   height: 2em;
-  margin-left: 1em;
-  font-size: 1.5em;
+  margin-left: em;
+  font-size: 1.2em;
   margin-bottom: 1em;
   justify-content: center;
+  
+}
+#pst{
+  width: 10em;
+  height: 2em;
+  margin-left: 0em;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  justify-content: center;
+
 }
 #cbt {
   width: 18em;
@@ -197,6 +208,18 @@
   font-size: 1.5em;
   margin-bottom: 1em;
   justify-content: center;
+}
+#gst{
+  margin-right: -2em;
+}
+#qst{
+  position: absolute;
+  width: 12em;
+  margin-left: 0em;
+}
+#label_qst{
+  position: absolute;
+  margin-left: 3.5em;
 }
 
 #save_icon {
