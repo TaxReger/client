@@ -32,20 +32,21 @@ export default function SignInView() {
           Incorrect Username/Password
         </div>
       )}
-      <div>
+      <div id = "mains">
+      <div id = "main_stuff">
         <div id="main_body">
-          <div id="body_stuff">
-            <div id="testing">
+          <div id="body__stuff">
+            <div id="testing_e">
               <div id="titles">
-                <h1 id="icon">
+                <h1 id="icon_b">
                   <i className="bi bi-journal-plus" />
                 </h1>
-                <p id="subheading">Login</p>
+                <p id="subheading_f">Login</p>
               </div>
               <div id="form_contents">
                 <form onSubmit={handleSubmit} className="signInForm" id="form">
                   <input
-                    id="elements"
+                    id="elements_g"
                     required
                     placeholder="email"
                     type="text"
@@ -55,19 +56,21 @@ export default function SignInView() {
                   <br />
 
                   <input
-                    id="elements"
+                    id="elements_g"
                     placeholder="password"
                     type="password"
                     value={password}
                     onChange={(v) => setPassword(v.target.value)}
                   />
                   <br />
+                  <div id = "hello">
                   <input
                     type="submit"
                     id="main__btn"
                     value="Submit"
                     disabled={authState === AuthState.LOADING}
                   />
+                  </div>
                 </form>
                 <br />
                 <br />
@@ -88,6 +91,7 @@ export default function SignInView() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

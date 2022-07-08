@@ -3,7 +3,8 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
-* body_stuff {
+* body__stuff {
+  background-color: white;
   position: relative;
   height: 100vh;
   background: #ffffff;
@@ -35,14 +36,16 @@
   font-size: 1.1em;
   color:black;
 }
-#testing {
-  margin-top: 7em;
+#testing_e {
+  margin-top: 10em;
   display: box;
   justify-content: center;
   align-items: center;
 }
 
-#subheading {
+#subheading_f {
+  margin-left: -2rem;
+  margin-bottom:1rem;  
   color: purple;
   font-size: 3.75em;
   font-weight: 100;
@@ -51,13 +54,7 @@
   text-align: center;
 }
 
-#header {
-  margin-bottom: 0.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7em;
-  color: Black;
-  font-weight: 400;
-}
+
 
 #main__btn {
   margin-left: 2.8em;
@@ -84,18 +81,18 @@
 #main__btn:hover:after {
   width: 100%;
 }
-#elements {
+#elements_g {
+  margin-left: 30rem;
   margin-right: 2em;
   width: 20em;
   height: 2em;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 1em;
   justify-content: center;
 }
 
 #form {
   font-size: 0.5em;
-  margin-left: 8em;
   align-items: center;
   text-align: center;
 }
@@ -170,7 +167,7 @@
 #Image:hover {
   top: 0.02em;
 }
-#icon {
+#icon_b {
   margin-right: 2.5rem;
   text-align: center;
   justify-content: center;
@@ -179,7 +176,7 @@
 }
 
 #lower_form {
- margin-left: 3em;
+  margin-left: 34rem;
   margin-top: -2.5em;
   text-align: center;
   justify-content: center;
@@ -189,7 +186,6 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 
 #lower_form:active{
   text-decoration: none;
@@ -205,4 +201,14 @@
   color: yellow;
 }
 
+#main_stuff{
+  margin-top: 10em;
+  background-color: white;
+}
+
+#mains{
+  background-color: white;
+  margin-top: 20em;
+  overflow:-moz-hidden-unscrollable;
+}
 
