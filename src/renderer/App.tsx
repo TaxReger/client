@@ -11,6 +11,7 @@ import StoreView from './pages/purchase/store/Store';
 import AddStorePage from './pages/purchase/store/newStore/AddStore';
 import AddPurchasePage from './pages/purchase/newPurchase/NewPurchase';
 import SearchStoreView from './pages/search/searchstore';
+import ReportFormView from './pages/ReportForm';
 
 const Gateway = () => {
   const { account } = useAuthContext();
