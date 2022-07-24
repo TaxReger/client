@@ -1,7 +1,8 @@
 import React from 'react';
+import SearchStoreView from './SearchPurchase';
 
 const SearchPage: React.FC = () => {
-  return <div> Work In Progress</div>;
+  return <SearchStoreView />;
 };
 
 export default SearchPage;

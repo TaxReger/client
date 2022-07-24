@@ -44,6 +44,15 @@ export const searchStores = async (query: string, province: string) => {
   return response.data.results;
 };
 
+export const searchPurchases = async (query: string) => {
+  const response = await api.get('/purchases/search', {
+    params: {
+      i: query,
+    },
+  });
+
+  return response.data.results;
+};
 export const addNewStore = async (
   name: string,
   address: string,

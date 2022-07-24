@@ -39,12 +39,11 @@ const AddStorePage: React.FC = () => {
   return (
     <>
       <div className="main-container" id="main_stuf">
-      <h1 id = "file_icon">
-  <div className="shadow-lg p-20 mb-10 bg-white rounded" id = "shadow">
-    <i className="bi bi-file-plus"></i>
-    </div>
-   
-      </h1>
+        <h1 id="file_icon">
+          <div className="shadow-lg p-20 mb-10 bg-white rounded" id="shadow">
+            <i className="bi bi-file-plus" />
+          </div>
+        </h1>
         <form onSubmit={handleSubmit}>
           <div className="section">
             <div>
@@ -96,11 +95,9 @@ const AddStorePage: React.FC = () => {
               />
             )}
           </div>
-          <div id = "other_btn">
-
-          <input type="submit" className='btn btn-secondary' id="stuff_btn" />
+          <div id="other_btn">
+            <input type="submit" className="btn btn-secondary" id="stuff_btn" />
           </div>
-          
         </form>
       </div>
     </>
