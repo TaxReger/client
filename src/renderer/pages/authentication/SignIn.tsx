@@ -26,6 +26,8 @@ export default function SignInView() {
     }
   };
   return (
+    <div id = "main_bodies">
+     
     <div>
       {authState === AuthState.FAILED && (
         <div className="alert alert-danger" id="alert" role="alert">
@@ -96,6 +98,7 @@ export default function SignInView() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

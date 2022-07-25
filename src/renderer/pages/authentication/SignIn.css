@@ -15,6 +15,12 @@
   align-items: center;
   color: purple;
 }
+#main_bodies{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  
+}
 #forget_text{
   text-decoration: none;
   transition: all 0.3s ease;
@@ -37,7 +43,7 @@
   color:black;
 }
 #testing_e {
-  margin-top: 10em;
+  margin-top: 16em;
   display: box;
   justify-content: center;
   align-items: center;
@@ -73,6 +79,7 @@
   margin-right: 7rem;
 
 }
+
 
 #main__btn:hover {
   border-radius: 2em;
@@ -168,6 +175,7 @@
   top: 0.02em;
 }
 #icon_b {
+  margin-top: 5em;
   margin-right: 2.5rem;
   text-align: center;
   justify-content: center;

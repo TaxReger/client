@@ -37,10 +37,10 @@ export default function SignUpView() {
               <i className="bi bi-person-plus" />
             </h1>
 
-            <p id="subheading">Sign Up</p>
+            <p id="subheading_z">Sign Up</p>
           </div>
           <div id="form_contents">
-            <form onSubmit={handleSubmit} className="signInForm" id="form">
+            <form onSubmit={handleSubmit} className="signInForm" id="form_bb">
               <input
                 id="elements_z"
                 placeholder="email"
@@ -68,7 +68,7 @@ export default function SignUpView() {
               <br />
             </form>
 
-            <p>
+            <p id = "already">
               Already have an account? <Link to="/"> Sign In</Link>
             </p>
           </div>
