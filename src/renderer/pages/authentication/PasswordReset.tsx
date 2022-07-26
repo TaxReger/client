@@ -4,6 +4,7 @@ import './PasswordReset.css';
 export default function PasswordResetView() {
   return (
     <div>
+      
       <div id="body_stuff_ee">
         <div id="testing_ee">
           <div id="titles">

@@ -115,14 +115,17 @@
 #forgot {
   text-align: center;
   margin-left: 15em;
+  margin-top: 2em;
+  
   font-size: 1rem;
   background: black;
 
   padding: 0.5em 1em;
+
   border: none;
   border-radius: 1em;
   color: #fff;
-  margin-top: 0.1rem;
+  margin-top: 1rem;
   text-align: center;
   margin-right: 4rem;
   cursor: pointer;
@@ -135,6 +138,8 @@
   border-radius: 0.4em;
   text-decoration: none;
 }
+
+
 #container {
   background-color: purple;
   color: white;

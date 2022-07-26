@@ -82,6 +82,8 @@ export default function SignInView() {
                   <br />
                   <div id="lower_form">
                     <Link id="forgot" to="/resetPassword">
+                      
+          
                       Forgot Password?
                     </Link>
                     <br />
