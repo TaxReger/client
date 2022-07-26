@@ -9,12 +9,13 @@
   background: #ffffff;
   font-family: 'Montserrat', sans-serif;
   overflow-y: hidden;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   color: purple;
 }
 #testing_z{
+  position: inherit;
   margin-top: 7.5em;
 }
 #header_z{
@@ -28,6 +29,7 @@
 
 
 #main__btn_z {
+  position: inherit;
 
   margin-left:2.8em;
   font-size: 1.5rem;
@@ -38,7 +40,7 @@
   color: #fff;
   margin-top: 0.5rem;
   cursor: pointer;
-  position: relative;
+  
   transition: all 0.3s ease;
   outline: none;
   margin-right:7rem;
@@ -56,25 +58,33 @@
 }
 
 #elements_z{
+  position: inherit;
   margin-right:2em;
   width:20em;
   height:2em;
   font-size:2.5em;
   margin-bottom:1em;
   justify-content:center;
+  align-items: center;
 
   
 }
 
 
 #form_bb{
-   font-size:0.5em;
-   margin-left:70em;
+  
+  display: block;
+ 
+  margin-left: 70em;
+  font-size:0.5em;
+  justify-content: center;
+ 
   align-items:center;
   text-align:center;
   
   
 }
+
 
 
 #create{
@@ -89,6 +99,7 @@
 
 
 #forgot {
+  position: inherit;
   margin-left:5em;
   font-size: 1rem;
   background: black;
@@ -148,6 +159,7 @@
   cursor:pointer;
   
 }
+
 #Image {
   position: absolute;
   width: 30px;
@@ -160,25 +172,36 @@
 }
 
 #icon{
+  position: inherit;
   
   color:black;
   font-size:5em;
-  position: relative;
-  margin-left:-3em;
-  margin-top: 4em;
+  text-align: center;
+  justify-content: center;
+  margin-top:3.5em;
+ /* margin-right: 0.25em;
+ 
+  margin-top: 3.5em;*/
+  
+}
+#titles{
+  justify-content: center;
+  align-items: center;
+  position: sticky;
   
 }
 
 #form_contents{
-  justify-content: center;
-  position: absolute;
+  
+ 
+  position:absolute;
 
 }
 
 
 #subheading_z {
-  position:relative;
-  margin-left: -2rem;
+  position:inherit;
+ 
   margin-bottom:1rem;  
   color: purple;
   font-size: 3.75em;
@@ -189,7 +212,7 @@
 }
 
 #already{
-  position: absolute;
+  position: inherit;
   margin-top: 0.5em;
   margin-left: 32em;
   text-decoration: none;
@@ -202,14 +225,40 @@
   font-size: 0.5em;
 }
 #already:hover{
+  transform: translateY(-0.25em);
   text-decoration: none;
   color:purple;
   
 }
-#already:link{
-  text-decoration: none;
+#already:Link{
+  text-decoration: underline;
+
+  
 
  
   font-size: 1.1em;
   color:black;
 }
+#linky{
+  display: inline-block;
+}
+
+@media (max-device-width:1536px) {
+  #form_bb{
+      margin-left: 40em;
+  }
+  #already{
+    margin-top:2em;
+    margin-left: 20em;
+  }
+}
+@media(min-device-width:1536px){
+  #form_bb{
+    margin-left: 70em;
+  }
+  #already{
+    margin-left: 32em;
+  }
+}
+
+  
