@@ -30,6 +30,9 @@ export default function SignUpView() {
   };
   return (
     <div>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"></meta>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
+      <meta name="HandheldFriendly" content="true"></meta>
       <div id="body_stuff_z">
         <div id="testing_z">
           <div id="titles">

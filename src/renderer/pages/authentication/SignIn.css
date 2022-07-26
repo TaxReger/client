@@ -63,7 +63,7 @@
 
 
 #main__btn {
-  margin-left: 2.8em;
+ 
   font-size: 1.5rem;
   background: #833ab4;
 
@@ -73,10 +73,10 @@
   color: #fff;
   margin-top: 0.5rem;
   cursor: pointer;
-  position: relative;
+
   transition: all 0.3s ease;
   outline: none;
-  margin-right: 7rem;
+ 
 
 }
 
@@ -219,5 +219,35 @@
   margin-top: 20em;
   overflow:-moz-hidden-unscrollable;
 }
+
+
+@media screen and (min-width:1200px) {
+  #form_bb{
+      margin-left: 40em;
+  }
+  #already{
+    margin-top:2em;
+    margin-left: 20em;
+  }
+}
+@media screen and (max-width:1200px){
+  #form_contents{
+    margin-right: 20em;
+  }
+  #lower_form{
+    margin-left: -5em;
+    margin-top: -2em;
+  }
+  #elements_g{
+    margin-left: -5em;
+  }
+  #main__btn{
+    margin-left: 40em;
+  }
+  #hello{
+    margin-left:-20em;
+  }
+}
+
 
 
