@@ -1,5 +1,5 @@
-export const API_URL = 'https://highvalerian.com';
-// export const API_URL = 'http://localhost:5000';
+// export const API_URL = 'https://highvalerian.com';
+export const API_URL = 'http://localhost:5000';
 
 export const ON_HST = 0.13;
 export const ON_PST = 0.08;

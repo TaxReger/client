@@ -91,3 +91,23 @@ export const addNewPurchase = async (
   });
   return response.data.data;
 };
+
+export const editPurchase = async (
+  id: number,
+  cost: number,
+  itemName: string,
+
+  dateOfInvoice: Date,
+  beneficiary: string,
+  invoiceNumber: string
+) => {
+  const response = await api.post(`/purchases/update/${id}`, {
+    dateOfInvoice,
+    itemName,
+    cost,
+    beneficiary,
+    invoiceNumber,
+  });
+
+  return response.data.data;
+};

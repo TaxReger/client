@@ -1,6 +1,7 @@
 import './SearchPurchase.css';
 import { useState } from 'react';
 import { searchPurchases } from 'renderer/funcs/networking';
+import { Link } from 'react-router-dom';
 
 export default function SearchStoreView() {
   const [query, setQuery] = useState('');
@@ -57,12 +58,19 @@ export default function SearchStoreView() {
               {results.map((v: any) => {
                 return (
                   <div key={v.id}>
-                    <div className="dropdown-row">
-                      <span className="title"> {v.itemName}</span>
-                      <span className="address">
-                        {v.invoiceNumber} <br />${v.cost}
-                      </span>
-                    </div>
+                    <Link
+                      to={`/purchase/edit?prov=${
+                        v.store.provinceId
+                      }&purchase=${JSON.stringify(v)}`}
+                      key={v.id}
+                    >
+                      <div className="dropdown-row">
+                        <span className="title"> {v.itemName}</span>
+                        <span className="address">
+                          {v.invoiceNumber} <br />${v.cost}
+                        </span>
+                      </div>
+                    </Link>
                   </div>
                 );
               })}

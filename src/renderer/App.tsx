@@ -12,6 +12,7 @@ import AddStorePage from './pages/purchase/store/newStore/AddStore';
 import AddPurchasePage from './pages/purchase/newPurchase/NewPurchase';
 import SearchStoreView from './pages/search/SearchPurchase';
 import ReportFormView from './pages/ReportForm';
+import EditPurchasePage from './pages/purchase/newPurchase/EditPurchase';
 
 const Gateway = () => {
   const { account } = useAuthContext();
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="selectStore" element={<StoreView />} />
         <Route path="store/new" element={<AddStorePage />} />
         <Route path="purchase/new" element={<AddPurchasePage />} />
+        <Route path="purchase/edit" element={<EditPurchasePage />} />
       </Routes>
     </Router>
   );
