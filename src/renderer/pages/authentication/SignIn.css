@@ -73,6 +73,7 @@
   color: #fff;
   margin-top: 0.5rem;
   cursor: pointer;
+  margin-bottom: 1rem;
 
   transition: all 0.3s ease;
   outline: none;
@@ -115,7 +116,7 @@
 #forgot {
   text-align: center;
   margin-left: 15em;
-  margin-top: 2em;
+  margin-top: 2.5em;
   
   font-size: 1rem;
   background: black;
@@ -211,14 +212,13 @@
 }
 #not_reg:hover{
   transform: translateY(-0.25em);
-  color: yellow;
+  color: purple;
 }
 
 #main_stuff{
   margin-top: 10em;
   background-color: white;
 }
-
 #mains{
   background-color: white;
   margin-top: 20em;
@@ -234,25 +234,43 @@
     margin-top:2em;
     margin-left: 20em;
   }
-}
-@media screen and (max-width:1200px){
-  #form_contents{
-    margin-right: 20em;
+  #main__btn{
+    margin-right:2em;
   }
   #lower_form{
-    margin-left: -5em;
-    margin-top: -2em;
-  }
-  #elements_g{
-    margin-left: -5em;
-  }
-  #main__btn{
-    margin-left: 40em;
-  }
-  #hello{
-    margin-left:-20em;
+    margin-top: 0.2;
   }
 }
+@media screen and (max-width:1200px){
+  #Icon_b{
+    margin-top: -4em;
+  }
+
+
+  #form_contents{
+    margin-right: 0em;
+  }
+  #lower_form{
+  
+    margin-left: 15em;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+  #elements_g{
+    margin-left: 9em;
+  }
+  #main__btn{
+    position: absolute;
+    top: 40%;
+    right: 17%;
+    
+  }
+  
+  
+  
+ 
+  }
+
 
 
 

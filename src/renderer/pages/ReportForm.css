@@ -46,43 +46,8 @@
   }
   
   
-  #main__btn {
-    margin-left:2.8em;
-    font-size: 1.5rem;
-    background: #833ab4;
-   
-    padding: 0.313em 3.75em;
-    border: none;
-    border-radius: 0.313em;
-    color: #fff;
-    margin-top: 0.5rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.3s ease;
-    outline: none;
-    margin-right:7rem;
-  }
-  
-  
-  
-  
-  #main__btn:hover {
-    border-radius:2em;
-    color: #fff;
-    
-  }
-  #main__btn:hover:after {
-    width: 100%;
-  }
-  #elements{
-    width:20em;
-    height:2em;
-    font-size:1.5em;
-    margin-bottom:1em;
-    justify-content:center;
-  
-    
-  }
+ 
+
   
   
   #form{
