@@ -16,7 +16,7 @@ import EditPurchasePage from './pages/purchase/newPurchase/EditPurchase';
 
 const Gateway = () => {
   const { account } = useAuthContext();
-  return <div>{!account ? SignInView() : TableIntroView()}</div>;
+  return <div>{!account ? TableIntroView() : TableIntroView()}</div>;
 };
 
 export default function App() {
