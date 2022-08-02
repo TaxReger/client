@@ -3,7 +3,8 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
-* body_stuff {
+* body__stuff {
+  background-color: white;
   position: relative;
   height: 100vh;
   background: #ffffff;
@@ -13,6 +14,12 @@
   justify-content: center;
   align-items: center;
   color: purple;
+}
+#main_bodies{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  
 }
 #forget_text{
   text-decoration: none;
@@ -35,14 +42,16 @@
   font-size: 1.1em;
   color:black;
 }
-#testing {
-  margin-top: 7em;
+#testing_e {
+  margin-top: 16em;
   display: box;
   justify-content: center;
   align-items: center;
 }
 
-#subheading {
+#subheading_f {
+  margin-left: -2rem;
+  margin-bottom:1rem;  
   color: purple;
   font-size: 3.75em;
   font-weight: 100;
@@ -51,16 +60,10 @@
   text-align: center;
 }
 
-#header {
-  margin-bottom: 0.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 7em;
-  color: Black;
-  font-weight: 400;
-}
+
 
 #main__btn {
-  margin-left: 2.8em;
+ 
   font-size: 1.5rem;
   background: #833ab4;
 
@@ -70,12 +73,14 @@
   color: #fff;
   margin-top: 0.5rem;
   cursor: pointer;
-  position: relative;
+  margin-bottom: 1rem;
+
   transition: all 0.3s ease;
   outline: none;
-  margin-right: 7rem;
+ 
 
 }
+
 
 #main__btn:hover {
   border-radius: 2em;
@@ -84,18 +89,18 @@
 #main__btn:hover:after {
   width: 100%;
 }
-#elements {
+#elements_g {
+  margin-left: 30rem;
   margin-right: 2em;
   width: 20em;
   height: 2em;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 1em;
   justify-content: center;
 }
 
 #form {
   font-size: 0.5em;
-  margin-left: 8em;
   align-items: center;
   text-align: center;
 }
@@ -111,14 +116,17 @@
 #forgot {
   text-align: center;
   margin-left: 15em;
+  margin-top: 2.5em;
+  
   font-size: 1rem;
   background: black;
 
   padding: 0.5em 1em;
+
   border: none;
   border-radius: 1em;
   color: #fff;
-  margin-top: 0.1rem;
+  margin-top: 1rem;
   text-align: center;
   margin-right: 4rem;
   cursor: pointer;
@@ -131,6 +139,8 @@
   border-radius: 0.4em;
   text-decoration: none;
 }
+
+
 #container {
   background-color: purple;
   color: white;
@@ -170,7 +180,8 @@
 #Image:hover {
   top: 0.02em;
 }
-#icon {
+#icon_b {
+  margin-top: 4.5em;
   margin-right: 2.5rem;
   text-align: center;
   justify-content: center;
@@ -179,7 +190,7 @@
 }
 
 #lower_form {
- margin-left: 3em;
+  margin-left: 34rem;
   margin-top: -2.5em;
   text-align: center;
   justify-content: center;
@@ -189,7 +200,6 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 
 #lower_form:active{
   text-decoration: none;
@@ -202,7 +212,65 @@
 }
 #not_reg:hover{
   transform: translateY(-0.25em);
-  color: yellow;
+  color: purple;
 }
+
+#main_stuff{
+  margin-top: 10em;
+  background-color: white;
+}
+#mains{
+  background-color: white;
+  margin-top: 20em;
+  overflow:-moz-hidden-unscrollable;
+}
+
+
+@media screen and (min-width:1200px) {
+  #form_bb{
+      margin-left: 40em;
+  }
+  #already{
+    margin-top:2em;
+    margin-left: 20em;
+  }
+  #main__btn{
+    margin-right:2em;
+  }
+  #lower_form{
+    margin-top: 0.2;
+  }
+}
+@media screen and (max-width:1200px){
+  #Icon_b{
+    margin-top: -4em;
+  }
+
+
+  #form_contents{
+    margin-right: 0em;
+  }
+  #lower_form{
+  
+    margin-left: 15em;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+  #elements_g{
+    margin-left: 9em;
+  }
+  #main__btn{
+    position: absolute;
+    top: 40%;
+    right: 17%;
+    
+  }
+  
+  
+  
+ 
+  }
+
+
 
 

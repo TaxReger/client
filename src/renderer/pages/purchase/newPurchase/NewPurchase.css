@@ -1,0 +1,261 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+#purchase_body {
+  margin-top: 1.3em;
+  height: 100vh;
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  color: purple;
+}
+#form_container {
+  margin: 2rem;
+  display: box;
+  justify-content: left;
+  align-items: left;
+}
+
+#subheading {
+  margin-top: 4em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  color: purple;
+  font-size: 2em;
+  font-weight: 100;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+}
+
+#header {
+  margin-bottom: 0.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7em;
+  color: Black;
+
+  font-weight: 400;
+}
+
+
+
+
+#elements {
+  width: 20em;
+  height: 2em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+#form {
+  font-size: 0.5em;
+
+  align-items: center;
+  text-align: center;
+}
+
+#create {
+  font-size: 3em;
+  transition: all 0.3s ease;
+}
+#create:hover {
+  color: black;
+}
+
+#forgot {
+  margin-left: 5em;
+  font-size: 1rem;
+  background: black;
+
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 1em;
+  color: #fff;
+  margin-top: 0.5rem;
+  text-align: center;
+  margin-right: 7rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  outline: none;
+}
+#forgot:hover {
+  border-radius: 0.4em;
+}
+#container {
+  background-color: purple;
+  color: white;
+  overflow: hidden;
+  position: absolute;
+  align-content: center;
+  top: 0.25em;
+  left: -1em;
+  padding: 2em 1em 2em 103.3em;
+  top: -1em;
+}
+#forget_text {
+  font-size: 2em;
+  margin-right: 2em;
+  transition: alll 1s ease;
+  cursor: pointer;
+}
+
+#contents p {
+  position: absolute;
+  top: 0.25em;
+  left: 2em;
+  top: 0.8em;
+  color: white;
+  font-weight: light;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#contents p:hover {
+  top: 0.5em;
+  color: yellow;
+  cursor: pointer;
+}
+#Image {
+  position: absolute;
+  width: 30px;
+  right: 4em;
+  top: 1.2em;
+  transition: all 1s ease-in-out;
+}
+#Image:hover {
+  top: 0.02em;
+}
+#icon {
+  text-align: center;
+  justify-content: center;
+  color: black;
+  font-size: 5em;
+  margin-left: 0.5em;
+}
+#form_contents {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.label_style {
+  color: black;
+  font-size: 1.5em;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+#item {
+  margin-right: 0.5em;
+}
+#items {
+  width: 20em;
+  height: 2em;
+  font-size: 1.5em;
+  margin-left: 5em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+#hst {
+  width: 10em;
+  height: 2em;
+  margin-left: em;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  justify-content: center;
+  
+}
+#pst{
+  width: 10em;
+  height: 2em;
+  margin-left: 0em;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  justify-content: center;
+
+}
+#cbt {
+  width: 18em;
+  height: 2em;
+  margin-left: 1em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+#gst{
+  margin-right: -2em;
+}
+#qst{
+  position: absolute;
+  width: 12em;
+  margin-left: 0em;
+}
+#label_qst{
+  position: absolute;
+  margin-left: 3.5em;
+}
+
+#save_icon {
+  margin-left: 0.5rem;
+}
+
+#file_icon {
+  top: 0.75em;
+  left: 4em;
+  text-align: center;
+  font-size: 15em;
+  box-shadow: black;
+  transition: all 1s ease-in-out;
+}
+#file_icon:hover {
+  font-size: 15.2em;
+  color: black;
+}
+
+#change {
+  margin-top: -1.9rem;
+}
+#save_btn {
+  margin: 1rem 0 1rem 0;
+}
+
+#form_section {
+  margin: 1rem 0 1rem 0;
+}
+
+#file_icon{
+  position: absolute;
+  
+  top: 0.75em;
+  left: 3.4em;
+  text-align: center;
+  font-size: 18em;
+  box-shadow: black;
+  margin-left: 0em;
+  transition: all 1s ease-in-out;
+  
+}
+#file_icon:hover{
+  margin-top: 0.05em;
+  margin-right: 0.8em;
+  
+  font-size: 17.5em;
+  color:black;
+}
+#save_btn{
+  width:15em;
+  background-color: purple;
+  color:white;
+  transition: all 0.5s ease-in-out;
+}
+#save_btn:hover{
+  background-color:black;
+  border-radius: 1em;
+
+}

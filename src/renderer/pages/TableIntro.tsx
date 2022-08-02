@@ -16,7 +16,7 @@ export default function TableIntroView() {
           <div id="form_contents_stuff">
             <Link to="/search">
               <div id="main__btns">
-                Search Table
+                Search Records
                 <i className="bi bi-binoculars" id="bi_icons" />
               </div>
             </Link>

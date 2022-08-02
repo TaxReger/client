@@ -1,5 +1,4 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import './SignIn.css';
 import ProvinceView from './pages/purchase/pronvince/Provinces';
 import SignInView from './pages/authentication/SignIn';
 import TableIntroView from './pages/TableIntro';
@@ -11,14 +10,13 @@ import SignUpView from './pages/authentication/Signup';
 import StoreView from './pages/purchase/store/Store';
 import AddStorePage from './pages/purchase/store/newStore/AddStore';
 import AddPurchasePage from './pages/purchase/newPurchase/NewPurchase';
-import SearchStoreView from './pages/search/searchstore';
-import QuebecFormView from './pages/QuebecForm';
+import SearchStoreView from './pages/search/SearchPurchase';
+import ReportFormView from './pages/ReportForm';
+import EditPurchasePage from './pages/purchase/newPurchase/EditPurchase';
 
 const Gateway = () => {
   const { account } = useAuthContext();
-
-  if (!account) return  SignInView();
-  return TableIntroView();
+  return <div>{!account ? SignInView() : TableIntroView()}</div>;
 };
 
 export default function App() {
@@ -34,6 +32,7 @@ export default function App() {
         <Route path="selectStore" element={<StoreView />} />
         <Route path="store/new" element={<AddStorePage />} />
         <Route path="purchase/new" element={<AddPurchasePage />} />
+        <Route path="purchase/edit" element={<EditPurchasePage />} />
       </Routes>
     </Router>
   );

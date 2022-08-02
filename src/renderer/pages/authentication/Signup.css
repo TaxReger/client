@@ -9,12 +9,13 @@
   background: #ffffff;
   font-family: 'Montserrat', sans-serif;
   overflow-y: hidden;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   color: purple;
 }
 #testing_z{
+  position: inherit;
   margin-top: 7.5em;
 }
 #header_z{
@@ -28,6 +29,7 @@
 
 
 #main__btn_z {
+  position: inherit;
 
   margin-left:2.8em;
   font-size: 1.5rem;
@@ -38,7 +40,7 @@
   color: #fff;
   margin-top: 0.5rem;
   cursor: pointer;
-  position: relative;
+  
   transition: all 0.3s ease;
   outline: none;
   margin-right:7rem;
@@ -56,25 +58,33 @@
 }
 
 #elements_z{
+  position: inherit;
   margin-right:2em;
   width:20em;
   height:2em;
   font-size:2.5em;
   margin-bottom:1em;
   justify-content:center;
+  align-items: center;
 
   
 }
 
 
-#form{
-   font-size:0.5em;
-   margin-left:8em;
+#form_bb{
+  
+  display: block;
+ 
+  margin-left: 70em;
+  font-size:0.5em;
+  justify-content: center;
+ 
   align-items:center;
   text-align:center;
   
   
 }
+
 
 
 #create{
@@ -89,6 +99,7 @@
 
 
 #forgot {
+  position: inherit;
   margin-left:5em;
   font-size: 1rem;
   background: black;
@@ -121,7 +132,7 @@
   top: -1em;
 }
 
-#forget_text{
+#already{
   font-size:2em;
   margin-right:2em;
   transition: alll 1s ease;
@@ -148,6 +159,7 @@
   cursor:pointer;
   
 }
+
 #Image {
   position: absolute;
   width: 30px;
@@ -160,10 +172,93 @@
 }
 
 #icon{
-  text-align:center;
-  justify-content:center;
+  position: inherit;
+  
   color:black;
   font-size:5em;
-  margin-left:0.5em;
+  text-align: center;
+  justify-content: center;
+  margin-top:3.5em;
+ /* margin-right: 0.25em;
+ 
+  margin-top: 3.5em;*/
   
 }
+#titles{
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  
+}
+
+#form_contents{
+  
+ 
+  position:absolute;
+
+}
+
+
+#subheading_z {
+  position:inherit;
+ 
+  margin-bottom:1rem;  
+  color: purple;
+  font-size: 3.75em;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#already{
+  position: inherit;
+  margin-top: 0.5em;
+  margin-left: 32em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+
+}
+#already:active{
+  text-decoration: none;
+  font-size: 0.5em;
+}
+#already:hover{
+  transform: translateY(-0.25em);
+  text-decoration: none;
+  color:purple;
+  
+}
+#already:Link{
+  text-decoration: underline;
+
+  
+
+ 
+  font-size: 1.1em;
+  color:black;
+}
+#linky{
+  display: inline-block;
+}
+
+@media screen and (max-width:1530px) {
+  #form_bb{
+      margin-left: 40em;
+  }
+  #already{
+    margin-top:2em;
+    margin-left: 20em;
+  }
+}
+@media screen and(min-width:1200px){
+  #form_bb{
+    margin-left: 70em;
+  }
+  #already{
+    margin-left: 32em;
+  }
+}
+
+  

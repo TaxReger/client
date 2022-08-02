@@ -1,33 +1,28 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import calculate from 'renderer/funcs/calculate';
 import { useQuery } from 'renderer/funcs/hooks';
-import { addNewPurchase } from 'renderer/funcs/networking';
-import './NewPurchase.css';
+import { addNewPurchase, editPurchase } from 'renderer/funcs/networking';
 
-const AddPurchasePage: React.FC = () => {
+const EditPurchasePage: React.FC = () => {
   const query = useQuery();
   const province = query.get('prov');
-  const store = JSON.parse(query.get('store') ?? '');
+  const purchase = JSON.parse(query.get('purchase') ?? '');
+  console.log(purchase);
+  const [date, setDate] = useState(new Date(purchase.dateOfInvoice));
+  const [itemName, setItemName] = useState(purchase.itemName);
 
-  const [date, setDate] = useState(new Date());
-  const [itemName, setItemName] = useState('');
-
-  const [beneficiary, setBeneficiary] = useState('');
-  const [invoiceNumber, setInvoiceNumber] = useState('');
+  const [beneficiary, setBeneficiary] = useState(purchase.beneficiary);
+  const [invoiceNumber, setInvoiceNumber] = useState(purchase.invoiceNumber);
   const [chequeTotal, setChequeTotal] = useState('');
 
-  const [breakdown, setBreakDown] = useState({
-    costBeforeTaxes: 0,
-    costAfterTaxes: 0,
-    HST: 0,
-    PST: 0,
-    GST: 0,
-    QST: 0,
-  });
+  const [breakdown, setBreakDown] = useState(
+    calculate(purchase.cost, province === 'on' ? 1 : 2)
+  );
 
   const navigate = useNavigate();
-  if (!store || !province) return <div> Store or Province not Provided</div>;
+  if (!purchase || !province)
+    return <div> Purchase or Province not Provided</div>;
 
   const handleCostBeforeChange = (value: number) => {
     const calc = calculate(value, province === 'on' ? 1 : 2);
@@ -41,18 +36,19 @@ const AddPurchasePage: React.FC = () => {
     console.log(breakdown);
 
     try {
-      const data = await addNewPurchase(
-        store.id,
-        itemName,
+      const data = await editPurchase(
+        purchase.id,
         breakdown.costBeforeTaxes,
+        itemName,
         date,
         beneficiary,
-        invoiceNumber,
-        chequeTotal
+        invoiceNumber
+        // chequeTotal
       );
 
       navigate('/');
-    } catch (err) {
+    } catch (err: any) {
+      window.alert(err.message);
       console.log(err);
     }
   };
@@ -236,4 +232,4 @@ const AddPurchasePage: React.FC = () => {
   );
 };
 
-export default AddPurchasePage;
+export default EditPurchasePage;

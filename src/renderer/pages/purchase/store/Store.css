@@ -111,13 +111,12 @@
 }
 
 .search-bar {
-  font-size: 1em;
-  margin-left: 4em;
-  margin-bottom: 2em;
+  font-size: 1.3em;
+  margin-bottom: 5px;
 }
 
 .search-bar input {
-  width: 300px;
+  width: 18.75em;
 }
 
 .dropdown {
@@ -139,9 +138,13 @@
 }
 
 .dropdown-row .title {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .dropdown-row .address {
-  font-size: 10px;
+  font-size: 15px;
+}
+#lower_stuffs{
+  margin-bottom: 1em;
+  margin-left: 2.0em;
 }

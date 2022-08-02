@@ -40,40 +40,41 @@ export default function StoreView() {
 
             <p id="subheading_b">{province} Stores </p>
           </div>
-
-          <div className="search-container">
-            <div className="search-bar">
-              <input
-                type="text"
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-              />
-              <button type="button" onClick={handleSearch}>
-              <i className="bi bi-search"></i>
-              </button>
-            </div>
-            {result.length >= 1 ? (
-              <div className="dropdown">
-                {result.map((v) => {
-                  return (
-                    <Link
-                      to={`/purchase/new?prov=${prov}&store=${JSON.stringify(
-                        v
-                      )}`}
-                      key={v.id}
-                    >
-                      <div className="dropdown-row">
-                        <span className="title"> {v.name}</span>
-                        <span className="address"> {v.address}</span>
-                      </div>
-                    </Link>
-                  );
-                })}
-                {addNewComponent}
+          <div id="lower_stuffs">
+            <div className="search-container">
+              <div className="search-bar">
+                <input
+                  type="text"
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
+                />
+                <button type="button" onClick={handleSearch}>
+                  <i className="bi bi-search" />
+                </button>
               </div>
-            ) : (
-              addNewComponent
-            )}
+              {result.length >= 1 ? (
+                <div className="dropdown">
+                  {result.map((v) => {
+                    return (
+                      <Link
+                        to={`/purchase/new?prov=${prov}&store=${JSON.stringify(
+                          v
+                        )}`}
+                        key={v.id}
+                      >
+                        <div className="dropdown-row">
+                          <span className="title"> {v.name}</span>
+                          <span className="address"> {v.address}</span>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                  {addNewComponent}
+                </div>
+              ) : (
+                addNewComponent
+              )}
+            </div>
           </div>
         </div>
       </div>

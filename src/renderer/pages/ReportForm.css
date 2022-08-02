@@ -3,7 +3,7 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 
-#body_stuff_dd {
+ #body_stuff {
     position: relative;
     height: 100vh;
     background: #FFFFFF;
@@ -22,9 +22,9 @@
     align-items:left;
   }
   
-  #subheading_d{
-    margin-top: 0.8em;
-    margin-bottom: 3rem;
+  #subheading{
+    margin-top: 5.5em;
+    margin-bottom: 1em;
     margin-left: 0.5em;
     color:purple;
     font-size:2em;
@@ -35,13 +35,30 @@
   }
   
   
-
-  
-  
-  
+  #header{
+    margin-bottom:0.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7em;
+    color: Black;
+   
+    font-weight:400;
+    
+    
+  }
   
   
  
+
+  
+  
+  #form{
+     font-size:0.5em;
+     
+    align-items:center;
+    text-align:center;
+    
+    
+  }
   
   
   #create{
@@ -103,11 +120,15 @@
     color:black;
   }
   
-  #change{
-    margin-top: -1.9rem;
+  #save_btn{
+    margin-top: -0.1rem;
+    width:15em;
+    background-color: purple;
+    color:white;
+    transition: all 0.5s ease-in-out;
   }
-#save_btn{
-    display: absolute;
-    margin-bottom: 5em;
-
-}
+  #save_btn:hover{
+    background-color:black;
+    border-radius: 1em;
+  
+  }

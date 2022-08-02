@@ -4,32 +4,28 @@ import './PasswordReset.css';
 export default function PasswordResetView() {
   return (
     <div>
-      <div id="body_stuff">
-        <div id="testing">
+      
+      <div id="body_stuff_ee">
+        <div id="testing_ee">
           <div id="titles">
             <h1 id="icon_zz">
               <i className="bi bi-bug" />
             </h1>
 
-            <p id="subheading">Password Reset</p>
+            <p id="subheading_ee">Password Reset</p>
           </div>
           <div id="form_contents">
-            <form action="" className="signInForm" id="form">
-              <input id="elements" placeholder="email" type="text" />
+            <form action="" className="signInForm" id="form_ee">
+              <input id="elements_ee" placeholder="email" type="text" />
               <br />
-              <button type="button" id="main__btn">
+              <button type="button" id="main__btn_ee">
                 Save
               </button>
               <br />
               <br />
             </form>
           </div>
-          <p>
-            <Link id="forget_text_z" to="/">
-              {' '}
-              Sign In Instead
-            </Link>
-          </p>
+        
         </div>
       </div>
     </div>

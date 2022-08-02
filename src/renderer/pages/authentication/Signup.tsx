@@ -30,6 +30,9 @@ export default function SignUpView() {
   };
   return (
     <div>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"></meta>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
+      <meta name="HandheldFriendly" content="true"></meta>
       <div id="body_stuff_z">
         <div id="testing_z">
           <div id="titles">
@@ -37,10 +40,10 @@ export default function SignUpView() {
               <i className="bi bi-person-plus" />
             </h1>
 
-            <p id="subheading">Sign Up</p>
+            <p id="subheading_z">Sign Up</p>
           </div>
           <div id="form_contents">
-            <form onSubmit={handleSubmit} className="signInForm" id="form">
+            <form onSubmit={handleSubmit} className="signInForm" id="form_bb">
               <input
                 id="elements_z"
                 placeholder="email"
@@ -68,7 +71,7 @@ export default function SignUpView() {
               <br />
             </form>
 
-            <p>
+            <p id = "already">
               Already have an account? <Link to="/"> Sign In</Link>
             </p>
           </div>
